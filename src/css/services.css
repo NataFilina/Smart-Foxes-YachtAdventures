@@ -1,0 +1,91 @@
+/* Project */
+
+/* .section {
+}
+.container {
+}
+.list {
+} */
+
+.services {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+  .services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .services {
+    padding-top: 164px;
+    padding-bottom: 164px;
+  }
+}
+
+.services-title {
+}
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) {
+  .services-list {
+    gap: 32px;
+  }
+}
+
+/* .services-item:not(:last-child) {
+  margin-bottom: 20px;
+} */
+.services-wrapper {
+  position: relative;
+}
+.services-img {
+  border-radius: 40px;
+  background: linear-gradient(
+    0deg,
+    rgba(17, 19, 31, 0.2) 0%,
+    rgba(17, 19, 31, 0.2) 100%
+  );
+  /* url(../img/services/diving-mob@1x.png), lightgray -15.688px -136.978px / 138.209% 164.622% no-repeat; */
+}
+.services-subtitle {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+
+  display: inline-flex;
+  padding: 14px 28px;
+  align-items: flex-start;
+  gap: 10px;
+
+  color: #11131f;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+  letter-spacing: -0.63px;
+
+  border-radius: 60px;
+  background-color: #f6f5ef;
+}
+
+@media only screen and (min-width: 768px) {
+  .services-subtitle {
+    bottom: 32px;
+    left: 32px;
+    font-size: 18px;
+    line-height: 19.8px;
+    letter-spacing: -0.81px;
+  }
+}

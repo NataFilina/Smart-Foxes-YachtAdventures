@@ -1,0 +1,133 @@
+/* mobile */
+.footer {
+    border-top: 1px solid rgba(246, 245, 239, 0.20);
+    margin-top: 80px;
+
+    /* background-image: linear-gradient(to top, #BEC7C2, #A1B5BA ); */
+}
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .footer {
+        margin-top: 32px;
+    }
+}
+.container {
+}
+/* mobile */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 44px;
+    padding-bottom: 14px;
+}
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .footer-container {
+        padding-top: 64px;
+        padding-bottom: 16px;
+    }
+}
+/* mobile */
+.footer-wrap {
+    margin-bottom: auto;
+}
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .footer-wrap {
+        display: flex;
+    }
+}
+
+.footer-thumb {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 44px;
+}
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .footer-thumb {
+        margin-right: 135px;
+    }
+}
+/* tablet */
+@media only screen and (min-width: 768px) {
+.footer-img {
+    width: 23px;
+    height: 23px;
+}
+}
+.footer-logo-text {
+font-size: 14px;
+font-weight: 700;
+line-height: 1.14;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+.footer-nav {
+}
+.footer-nav-list {
+    margin-bottom: 44px;
+}
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .footer-nav-list {
+        margin-right: 143px;
+    }
+}
+.footer-nav-item:not(:last-child) {
+    margin-bottom: 14px;
+}
+.nav-link {
+font-size: 14px;
+font-weight: 700;
+line-height: 1.18; 
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+.footer-networks-thumb {
+    
+}
+.footer-networks-text {
+font-size: 14px;
+font-weight: 700;
+line-height: 1.1; 
+text-transform: uppercase;
+letter-spacing: 0.42px;
+margin-bottom: 16px;
+}
+.footer-networks-list {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 40px;
+}
+.footer-networks-item {
+}
+.footer-networks-link {
+}
+.footer-networks-icon {
+    stroke: var(--primary-text-color);
+    fill: transparent;
+}
+.footer-remark-list {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+}
+.footer-remark-item {
+}
+/* mobile */
+.footer-remark-link {
+color: rgba(246, 245, 239, 0.50);
+text-align: center;
+font-size: 12px;
+line-height: 1.18; 
+letter-spacing: 0.36px;
+}
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .footer-remark-link {
+        font-size: 14px;
+        letter-spacing: 0.42px;
+    }
+}

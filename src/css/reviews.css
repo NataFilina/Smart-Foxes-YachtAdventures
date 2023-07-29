@@ -50,6 +50,7 @@
 
 .reviews {
     display: none;
+    background: var(--dark-blue, #11131F);
 }
 
 /* Desk screen */

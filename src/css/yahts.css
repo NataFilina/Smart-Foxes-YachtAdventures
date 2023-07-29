@@ -216,7 +216,7 @@ letter-spacing: -0.81px;
 }
 @media only screen and (min-width: 768px) {
   .yahts-item {
-    width: 354px;
+    width: 344px;
   }
 }
 @media only screen and (max-width: 767.98px) {
@@ -230,7 +230,20 @@ letter-spacing: -0.81px;
     }
   }
 .yahts-img {
+  width: 299px;
+    margin: 18px 18px 24px 18px;
+}
+@media only screen and (min-width: 768px) {
+  .yahts-img {
+    margin: 16px 26px 32px 16px;
+    width: 312px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .yahts-img {
     margin: 16px 16px 32px 16px;
+    width: 322px;
+  }
 }
 .yahts-item-description {
     padding: 0 32px 32px 32px;

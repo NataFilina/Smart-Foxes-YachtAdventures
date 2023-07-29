@@ -1,0 +1,51 @@
+.reviews {}
+
+.container {}
+
+.reviews-title {}
+
+.reviews-customers {}
+
+.customers {}
+
+.list {}
+
+.customers-item {}
+
+.customers-card {}
+
+.customers-card-img {}
+
+.customers-name {}
+
+.customers-review {}
+
+
+/*
+  |============================
+  | Section reviews
+  |============================
+*/
+
+.reviews {
+    display: none;
+}
+
+/* Desk screen */
+@media only screen and (min-width: 1158px) {
+    .reviews {
+        display: initial;
+    }
+
+    .customers {
+        display: flex;
+        gap: 24px;
+        padding-bottom: 120px;
+    }
+
+    .customers-item {
+        width: calc((100% - 48px) / 3);
+        justify-content: center;
+
+    }
+}

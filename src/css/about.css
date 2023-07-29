@@ -109,12 +109,12 @@
         height: 473px;
     }
 }
-.about-imgs-item:nth-child(2n) {
+.about-imgs-item:nth-child(2) {
     width: 335px;
     height: 289px;
 }
 @media screen and (min-width: 768px) {
-    .about-imgs-item:nth-child(2n) {
+    .about-imgs-item:nth-child(2) {
         width: 308px;
     }
 }

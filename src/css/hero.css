@@ -174,3 +174,33 @@
     margin: 0;
   }
 }
+.hero-ellipse-first::before {
+  width: 279px;
+  content: '';
+  position: absolute;
+  height: 279px;
+  transform: rotate(-44.916deg);
+  border-radius: 279px;
+  opacity: 0.6000000238418579;
+  background: #91AFBA;
+  filter: blur(100px);
+  right: 90%;
+  bottom: 25%;
+}
+.hero-ellipse-second::after {
+  width: 279px;
+  content: '';
+  position: absolute;
+  height: 279px;
+  transform: rotate(-44.916deg);
+  border-radius: 279px;
+  opacity: 0.8999999761581421;
+  background: #939CAC;
+  filter: blur(100px);
+  right: 53%;
+  top: 47%;
+}
+.hero-owner-block {
+  width: 100%;
+  height: 465.105px;
+}

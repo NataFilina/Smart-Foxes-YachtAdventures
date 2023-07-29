@@ -2,18 +2,19 @@
 .section {
 }
 .container {
-    max-width: 335px;
+  min-width: 320px;
+    max-width: 375px;
     padding-left: 20px;
     padding-right: 20px;
 }
 @media only screen and (min-width: 768px) {
   .container {
-    max-width: 704px;
+    max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1216px) {
     .container {
     max-width: 1216px;
     padding-left: 32px;
@@ -30,7 +31,7 @@
     max-width: 641px;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1216px) {
     .div-yahts-title {
         max-width: 882px;
     }
@@ -67,7 +68,7 @@ height: 195px;
     filter: blur(100px);
     }
   }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1216px) {
   .div-yahts-title::after {
     content: '';
     position: absolute;
@@ -110,7 +111,7 @@ margin-bottom: 40px;
   margin-bottom: 64px;
     }
   }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1216px) {
   .yahts-title {
     font-size: 100px;
 font-weight: 500;
@@ -154,7 +155,7 @@ filter: blur(100px);
 
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1216px) {
   .yahts-title::after {
     content: '';
     position: absolute;
@@ -224,7 +225,7 @@ letter-spacing: -0.81px;
     display: none;
   }
 }
-@media only screen and (max-width: 1279.98px) {
+@media only screen and (max-width: 1215.98px) {
     .card-3 {
       display: none;
     }
@@ -239,7 +240,7 @@ letter-spacing: -0.81px;
     width: 312px;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1216px) {
   .yahts-img {
     margin: 16px 16px 32px 16px;
     width: 322px;

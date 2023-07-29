@@ -2,16 +2,73 @@
 .section {
 }
 .container {
+    max-width: 335px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+    .container {
     max-width: 1216px;
     padding-left: 32px;
     padding-right: 32px;
+  }
 }
 .div-yahts-title {
     position: relative;
-    max-width: 882px;
+    max-width: 310px;
     margin: 0 auto;
 }
-.div-yahts-title::after {
+@media only screen and (min-width: 768px) {
+  .div-yahts-title {
+    max-width: 641px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+    .div-yahts-title {
+        max-width: 882px;
+    }
+  }
+  @media only screen and (max-width: 767.98px) {
+    .div-yahts-title::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 195px;
+height: 195px;
+    transform: rotate(-45.074deg);
+    flex-shrink: 0;
+    border-radius: 316px;
+    opacity: 0.30000001192092896;
+    background: #A6A9B2;
+    filter: blur(100px);
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .div-yahts-title::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 304px;
+        height: 304px; 
+    transform: rotate(-45.074deg);
+    flex-shrink: 0;
+    border-radius: 316px;
+    opacity: 0.30000001192092896;
+    background: #A6A9B2;
+    filter: blur(100px);
+    }
+  }
+@media only screen and (min-width: 1280px) {
+  .div-yahts-title::after {
     content: '';
     position: absolute;
     top: 0;
@@ -24,18 +81,81 @@ border-radius: 316px;
 opacity: 0.30000001192092896;
 background: #A6A9B2;
 filter: blur(100px);
-}
+  }
+} 
+    
+
 .yahts-title {
     position: relative;
+font-size: 36px;
+font-weight: 500;
+line-height: 39.6px;
+letter-spacing: -1.62px;
+
+
+margin-bottom: 40px;
+}
+@media only screen and (max-width: 767.98px) {
+  .yahts-title {
+    width: 310px;
+  }
+}
+@media only screen and (min-width: 768px) {
+    .yahts-title {
+      font-size: 70px;
+  font-weight: 500;
+  line-height: 77px;
+  letter-spacing: -3.15px;
+  max-width: 641px;
+  margin-bottom: 64px;
+    }
+  }
+@media only screen and (min-width: 1280px) {
+  .yahts-title {
     font-size: 100px;
 font-weight: 500;
 line-height: 1.1;
 letter-spacing: -4.5px;
 
-
-margin-bottom: 64px;
+max-width: 882px;
+  }
 }
-.yahts-title::after {
+@media only screen and (max-width: 767.98px) {
+    .yahts-title::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 255px;
+      height: 255px;
+      transform: rotate(-44.094deg);
+  flex-shrink: 0;
+  border-radius: 399px;
+  opacity: 0.6000000238418579;
+  background: #91AFBA;
+  filter: blur(100px);
+  
+    }
+  }
+@media only screen and (min-width: 768px) {
+  .yahts-title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 399px;
+    height: 399px;
+    transform: rotate(-44.094deg);
+flex-shrink: 0;
+border-radius: 399px;
+opacity: 0.6000000238418579;
+background: #91AFBA;
+filter: blur(100px);
+
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .yahts-title::after {
     content: '';
     position: absolute;
     top: 0;
@@ -49,16 +169,16 @@ opacity: 0.6000000238418579;
 background: rgba(145, 175, 186, 1);
 filter: blur(100px);
 
-}
-
-
+  }
+} 
+    
 .yahts-link {
 }
 .yacht-button {
-font-size: 18px;
-font-weight: 700;
-line-height: 19.8px;
-letter-spacing: -0.81px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15.4px; 
+    letter-spacing: -0.63px;
 
 color: var(--primary-text-color);
 background-color: inherit;
@@ -69,16 +189,20 @@ border: 1px solid var(--primary-text-color);
 padding: 14px 28px;
 
 }
+@media only screen and (min-width: 768px) {
+  .yacht-button {
+    font-size: 18px;
+line-height: 19.8px;
+letter-spacing: -0.81px;
+  }
+}
 .div-yahts {
     padding-top: 164px;
     padding-bottom: 164px;
 
     display: flex;
 }
-.swiper {
-    display: flex;
-    flex-direction: row;
-}
+
 .yahts-list {
     display: flex;
     gap: 16px;
@@ -87,8 +211,24 @@ padding: 14px 28px;
 }
 .yahts-item {
     background:  #1F212D;
-    width: 354px;
+    
+    width: 335px;
 }
+@media only screen and (min-width: 768px) {
+  .yahts-item {
+    width: 354px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .card-2, .card-3 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1279.98px) {
+    .card-3 {
+      display: none;
+    }
+  }
 .yahts-img {
     margin: 16px 16px 32px 16px;
 }

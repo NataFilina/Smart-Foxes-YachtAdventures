@@ -2,9 +2,30 @@
 
 .container {}
 
-.reviews-title {}
+.reviews-title {
+    width: 335px;
+    font-family: DM Sans;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 1.2;
+        /* 28.8px */
+        letter-spacing: -1.08px;
+        background: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+            background-clip: text;
+}
 
-.reviews-customers {}
+.reviews-customers {
+    width: 335px;
+        color: var(--white, #F6F5EF);
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.4;
+        /* 19.6px */
+        letter-spacing: -0.28px;
+}
 
 .customers {}
 

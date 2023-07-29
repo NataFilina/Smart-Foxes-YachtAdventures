@@ -32,7 +32,7 @@
 /* tablet */
 @media only screen and (min-width: 768px) {
     .footer-wrap {
-        /* display: flex; */
+        display: flex;
     }
 }
 
@@ -40,6 +40,7 @@
     display: flex;
     gap: 8px;
     margin-bottom: 44px;
+    align-items: center;
 }
 /* tablet */
 @media only screen and (min-width: 768px) {
@@ -111,6 +112,20 @@ margin-bottom: 16px;
     gap: 14px;
     align-items: center;
     justify-content: center;
+    position: relative;
+  }
+.footer-remark-list::after {
+width: 420px;
+height: 420px;
+transform: rotate(-45.408deg);
+flex-shrink: 0;
+border-radius: 420px;
+opacity: 0.6000000238418579;
+background: var(--light-green, #93ABAE);
+filter: blur(100px);
+content: "";
+position: absolute;
+transform:  translateX(35px) translateY(195px) rotate(-44.916deg);
 }
 .footer-remark-item {
 }
@@ -121,6 +136,7 @@ text-align: center;
 font-size: 12px;
 line-height: 1.18; 
 letter-spacing: 0.36px;
+
 }
 /* tablet */
 @media only screen and (min-width: 768px) {

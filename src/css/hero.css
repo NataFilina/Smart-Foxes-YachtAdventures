@@ -187,7 +187,7 @@
   right: 90%;
   bottom: 25%;
 }
-.hero-ellipse-second::after {
+.hero-ellipse-second::before {
   width: 279px;
   content: '';
   position: absolute;
@@ -200,7 +200,11 @@
   right: 53%;
   top: 47%;
 }
-.hero-owner-block {
+.hero-owner-container {
   width: 100%;
   height: 465.105px;
+  /* background-color: linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%); */
+  background-image: url(../img/hero/card@1x-mob.png);
+  
 }
+

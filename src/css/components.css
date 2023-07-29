@@ -32,3 +32,11 @@ body {
         max-width: 1216px;
     }
 }
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}

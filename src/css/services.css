@@ -1,11 +1,4 @@
-/* Project */
-
-/* .section {
-}
-.container {
-}
-.list {
-} */
+/* Services styles */
 
 .services {
   padding-top: 80px;
@@ -28,28 +21,70 @@
 
 .services-title {
 }
+
 .services-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  justify-content: center;
+  /* flex-wrap: wrap; */
   align-items: center;
-  flex-wrap: wrap;
+  gap: 20px;
 }
 
 @media only screen and (min-width: 768px) {
   .services-list {
+    flex-wrap: wrap;
     gap: 32px;
   }
 }
 
-/* .services-item:not(:last-child) {
-  margin-bottom: 20px;
-} */
+@media only screen and (min-width: 1280px) {
+  .services-list {
+    flex-direction: row;
+    /* gap: 64px; */
+    row-gap: 64px;
+    column-gap: 64px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .item-two {
+    align-self: flex-end;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .item-one {
+    align-self: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .item-two {
+    align-self: flex-start;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .item-three {
+    align-self: flex-start;
+    padding-left: 64px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .item-three {
+    align-self: center;
+    padding-left: 0;
+  }
+}
+
 .services-wrapper {
   position: relative;
 }
 .services-img {
+  /* max-width: 100%;
+  height: auto; */
+  margin: 0 auto;
   border-radius: 40px;
   background: linear-gradient(
     0deg,
@@ -68,10 +103,8 @@
   align-items: flex-start;
   gap: 10px;
 
-  color: #11131f;
-  font-family: DM Sans;
   font-size: 14px;
-  font-style: normal;
+  color: #11131f;
   font-weight: 700;
   line-height: 15.4px;
   letter-spacing: -0.63px;

@@ -1,0 +1,150 @@
+
+.section {
+}
+.container {
+    max-width: 1216px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.div-yahts-title {
+    position: relative;
+    max-width: 882px;
+    margin: 0 auto;
+}
+.div-yahts-title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 316px;
+    height: 316px;
+transform: rotate(-45.074deg);
+flex-shrink: 0;
+border-radius: 316px;
+opacity: 0.30000001192092896;
+background: #A6A9B2;
+filter: blur(100px);
+}
+.yahts-title {
+    position: relative;
+    font-size: 100px;
+font-weight: 500;
+line-height: 1.1;
+letter-spacing: -4.5px;
+
+
+margin-bottom: 64px;
+}
+.yahts-title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+width: 414px;
+height: 414px;
+transform: rotate(-45.074deg);
+flex-shrink: 0;
+border-radius: 414px;
+opacity: 0.6000000238418579;
+background: rgba(145, 175, 186, 1);
+filter: blur(100px);
+
+}
+
+
+.yahts-link {
+}
+.yacht-button {
+font-size: 18px;
+font-weight: 700;
+line-height: 19.8px;
+letter-spacing: -0.81px;
+
+color: var(--primary-text-color);
+background-color: inherit;
+
+border-radius: 60px;
+border: 1px solid var(--primary-text-color);
+
+padding: 14px 28px;
+
+}
+.div-yahts {
+    padding-top: 164px;
+    padding-bottom: 164px;
+
+    display: flex;
+}
+.swiper {
+    display: flex;
+    flex-direction: row;
+}
+.yahts-list {
+    display: flex;
+    gap: 16px;
+    margin: 0 auto;
+
+}
+.yahts-item {
+    background:  #1F212D;
+    width: 354px;
+}
+.yahts-img {
+    margin: 16px 16px 32px 16px;
+}
+.yahts-item-description {
+    padding: 0 32px 32px 32px;
+}
+.yahts-item-description-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    color: var(--primary-text-color);
+font-size: 16px;
+font-weight: 700;
+line-height: 19.2px;
+letter-spacing: -0.72px;
+text-transform: uppercase;
+
+margin-bottom: 32px;
+}
+.yahts-item-description-title-span {
+    color: var(--primary-text-color);
+font-size: 12px;
+font-weight: 400;
+line-height: 14.16px;
+letter-spacing: 0.36px;
+text-transform: uppercase;
+
+opacity: 0.5;
+}
+.yahts-item-description-div {
+display: flex;
+gap: 32px;
+}
+.yahts-list-left {
+}
+.yahts-item-description-left {
+    color: var(--primary-text-color);
+font-size: 14px;
+line-height: 16.52px; 
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+.yahts-item-description-left:not(:last-child) {
+    margin-bottom: 6px;
+}
+.yahts-list-right {
+}
+.yahts-item-description-right {
+    color: var(--primary-text-color);
+    font-size: 14px;
+    line-height: 16.52px; 
+    letter-spacing: 0.42px;
+}
+.yahts-item-description-right:not(:last-child) {
+    margin-bottom: 6px;
+}
+.yahts-item-description-right {
+}

@@ -21,7 +21,7 @@ p {
     margin: 0;
 }
 
-ul {
+ul, li {
     margin: 0;
     padding: 0;
 }
@@ -41,27 +41,29 @@ img {
 
 .container {
     min-width: 320px;
-    max-width: 396px;
-    padding: 0 16px;
-    margin: 0 auto;
+    max-width: 374px;
+    /* padding: 0 16px; */
+    margin: 0 ;    
 }
 
 /* Tablet  */
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 768px;
+        /* max-width: 768px; */
+        
     }
 }
 
 /* Desk  */
 
-@media screen and (min-width: 1158px) {
+/* @media screen and (min-width: 1280px) {
     .container {
-        max-width: 1158px;
+        max-width: 1280px;
         padding: 0 15px;
+
     }
-}
+} */
 
 
 
@@ -132,10 +134,12 @@ img {
 .customers-item {
     padding: 24px;
     display: flex;
+    flex-wrap: nowrap;
+    
     border: 1px solid #1F212D;
         border-radius: 24px;
         width: 307px;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 18px;
@@ -143,12 +147,14 @@ img {
         flex-shrink: 0;
 }
 
-.customers-card {}
+.customers-card {
+}
 
 .customers-card-img {
     /* position: relative; */
 margin: auto;
-display: block;
+display: flex;
+flex-wrap: nowrap;
     margin-bottom: 18px;
     
         width: 48px;
@@ -197,26 +203,65 @@ display: block;
 */
 
 .reviews {
-    display: none;
+    display: initial;
     background-color: var(--dark-blue, #11131F);
     margin-top: 80px;    
 }
 
+.customers {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    padding-bottom: 120px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .reviews {
+        display: initial;
+    }
+
+        .customers-item {
+    
+            width: calc((100% - 48px) / 2);
+            justify-content: center;
+            width: 307px;
+            height: 160px;
+            display: flex;
+            flex-wrap: nowrap;    
+        }
+        
+        .customers {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 24px;
+            padding-bottom: 120px;
+        }
+
+
+}
+
 /* Desk screen */
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1280px) {
     .reviews {
         display: initial;
     }
 
     .customers {
         display: flex;
+        flex-wrap: nowrap;
         gap: 24px;
         padding-bottom: 120px;
     }
 
     .customers-item {
+        
         width: calc((100% - 48px) / 3);
         justify-content: center;
+        width: 307px;
+        height: 160px;
+        display: flex;
+        flex-wrap: nowrap;
 
     }
 }

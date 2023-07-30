@@ -190,12 +190,23 @@ transform:  translateX(-16px) translateY(-65px) rotate(-44.916deg);
         transform:  translateX(267px) translateY(-65px) rotate(-44.916deg);
     }
 }
+/* dekstop */
+@media only screen and (min-width: 1280px) {
+    .footer-ellipse::after {
+        width: 415px;
+        height: 415px;
+        transform: rotate(-45.044deg);
+        transform:  translateX(41px) translateY(-51px) rotate(-44.916deg);
+        border-radius: 415px;
+    }
+}
 /* tablet */
 @media only screen and (min-width: 768px) {
     .footer-remark-list {
         gap: 32px;
     }
 }
+
 .footer-remark-item {
 }
 /* mobile */

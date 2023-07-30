@@ -134,12 +134,12 @@
     }
 }
 .about-imgs-item:last-child {
-    align-self: flex-end;
+    /* align-self: flex-end; */
     width: 260px;
     height: 244px;
-    /* position: absolute;
+    position: absolute;
     top: 863px;
-    left: 321px; */
+    left: 321px;
 }
 @media screen and (min-width: 768px) {
     .about-imgs-item:last-child {

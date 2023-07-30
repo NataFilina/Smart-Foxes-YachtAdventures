@@ -44,12 +44,14 @@
     .footer-wrap {
         display: flex;
         align-items: flex-start;
+        margin-bottom: 100px;
     }
 }
 /* dekstop */
 @media only screen and (min-width: 1280px) {
     .footer-wrap {
-     align-items: baseline;
+        margin-bottom: 132px;
+        justify-content: space-between;
     }
 }
 .footer-thumb {
@@ -67,7 +69,7 @@
 /* dekstop */
 @media only screen and (min-width: 1280px) {
     .footer-thumb {
-        margin-right: 314px;
+        /* margin-right: 314px; */
     }
 }
 /* tablet */
@@ -104,12 +106,20 @@ height: 13px;
     .footer-nav-list {
         flex-direction: row;
         gap: 24px;
-        margin-right: 315px;
+        align-items: normal;
+        /* margin-right: 315px; */
     }
 }
 .footer-nav-item:not(:last-child) {
     margin-bottom: 14px;
 }
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .footer-nav-item:not(:last-child) {
+        margin-bottom: 24px;
+}
+}
+
 .nav-link {
 font-size: 14px;
 font-weight: 700;
@@ -158,8 +168,7 @@ margin-bottom: 16px;
     gap: 14px;
     align-items: center;
     justify-content: center;
-    /* position: relative; */
-  }
+   }
 .footer-ellipse::after {
 width: 420px;
 height: 420px;
@@ -172,15 +181,34 @@ filter: blur(100px);
 content: "";
 position: absolute;
 transform:  translateX(-16px) translateY(-65px) rotate(-44.916deg);
-
 }
-
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .footer-ellipse::after {
+        width: 419px;
+        height: 419px;
+        transform: rotate(-45.565deg);
+        border-radius: 419px;
+        transform:  translateX(267px) translateY(-65px) rotate(-44.916deg);
+    }
+}
 /* dekstop */
 @media only screen and (min-width: 1280px) {
+    .footer-ellipse::after {
+        width: 415px;
+        height: 415px;
+        transform: rotate(-45.044deg);
+        transform:  translateX(41px) translateY(-51px) rotate(-44.916deg);
+        border-radius: 415px;
+    }
+}
+/* tablet */
+@media only screen and (min-width: 768px) {
     .footer-remark-list {
         gap: 32px;
     }
 }
+
 .footer-remark-item {
 }
 /* mobile */

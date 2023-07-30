@@ -6,13 +6,18 @@
 }
 
 
+
 /* ==================== */
 /* ========rent======== */
 /* ==================== */
 
 .rent {
-    background-color: var(--bg-color);
     margin-bottom: 80px;
+}
+
+.rent__first-box {
+    overflow: hidden;
+
 }
 
 .rent__img-box {
@@ -39,6 +44,7 @@
 .rent__form {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .rent__form::before {
@@ -46,6 +52,8 @@
     position: absolute;
     height: 283px;
     width: 283px;
+
+
     border-radius: 283px;
     opacity: 0.6000000238418579;
     background-color: #91AFBA;
@@ -178,7 +186,6 @@
     background-size: contain;
     height: 149px;
     width: 287px;
-
     margin-bottom: 24px;
 }
 

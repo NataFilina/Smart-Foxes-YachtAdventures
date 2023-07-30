@@ -33,3 +33,11 @@ body {
         max-width: 1280px;
     }
 }
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}

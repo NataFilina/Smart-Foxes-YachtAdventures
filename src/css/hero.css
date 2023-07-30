@@ -211,7 +211,7 @@
   /* background-color: linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%); */
 }
 .background-hero-image {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: center;
 }
@@ -277,4 +277,10 @@
   justify-content: flex-end;
   position: absolute;
   top: 61px;
+}
+.hero-owner-image {
+  display: flex;
+  position: absolute;
+  top: 75px;
+  left: 234px;
 }

@@ -122,11 +122,35 @@ img {
 
 .customers-card {}
 
-.customers-card-img {}
+.customers-card-img {
+    /* position: relative; */
+    
+}
 
-.customers-name {}
+.customers-name {
+    color: var(--white, #F6F5EF);
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.1;
+        /* 17.6px */
+        letter-spacing: -0.72px;
+}
 
-.customers-review {}
+.customers-review {
+    width: 300px;
+        color: rgba(246, 245, 239, 0.50);
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.4;
+        /* 16.8px */
+        letter-spacing: -0.24px;
+}
 
 
 /*

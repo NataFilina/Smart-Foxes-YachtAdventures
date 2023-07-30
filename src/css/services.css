@@ -25,14 +25,13 @@
 .services-list {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
-  align-items: center;
+  flex-wrap: wrap;
+  /* align-items: center; */
   gap: 20px;
 }
 
 @media only screen and (min-width: 768px) {
   .services-list {
-    flex-wrap: wrap;
     gap: 32px;
   }
 }
@@ -46,44 +45,36 @@
   }
 }
 
+.services-item {
+  position: relative;
+}
+
 @media only screen and (min-width: 768px) {
-  .item-two {
+  .services-item:nth-child(2) {
     align-self: flex-end;
   }
 }
 
-@media only screen and (min-width: 1280px) {
-  .item-one {
-    align-self: flex-start;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .item-two {
-    align-self: flex-start;
-  }
-}
-
 @media only screen and (min-width: 768px) {
-  .item-three {
+  .services-item:last-child {
     align-self: flex-start;
-    padding-left: 64px;
+    left: 64px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .item-three {
-    align-self: center;
-    padding-left: 0;
+  .services-item:last-child {
+    left: 372px;
+    right: 472px;
+    background-image: image-set();
   }
 }
 
 .services-wrapper {
-  position: relative;
 }
 .services-img {
-  /* max-width: 100%;
-  height: auto; */
+  width: 335px;
+  height: 335px;
   margin: 0 auto;
   border-radius: 40px;
   background: linear-gradient(
@@ -91,8 +82,51 @@
     rgba(17, 19, 31, 0.2) 0%,
     rgba(17, 19, 31, 0.2) 100%
   );
-  /* url(../img/services/diving-mob@1x.png), lightgray -15.688px -136.978px / 138.209% 164.622% no-repeat; */
+  /* ); lightgray -15.688px -136.978px / 138.209% 164.622% no-repeat; */
 }
+
+@media only screen and (min-width: 768px) {
+  .img-one {
+    width: 704px;
+    height: 632px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .img-two {
+    width: 400px;
+    height: 389px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .img-three {
+    width: 380px;
+    height: 352px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .img-one {
+    width: 712px;
+    height: 632px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .img-two {
+    width: 440px;
+    height: 448px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .img-three {
+    width: 436px;
+    height: 352px;
+  }
+}
+
 .services-subtitle {
   position: absolute;
   bottom: 24px;

@@ -1,5 +1,92 @@
-.reviews {}
+:root {
+--dark-blue: #11131F;
+}
 
+/* from 6 HW */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    color: var(--content-color);
+    background-color: #11131F;
+}
+
+main {
+    flex-grow: 1;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 396px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+/* Tablet screen */
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+/* Desk screen */
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+}
+
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* from 6 HW */
 .container {}
 
 .reviews-title {
@@ -50,7 +137,7 @@
 
 .reviews {
     display: none;
-    background: var(--dark-blue, #11131F);
+    background-color: var(--dark-blue, #11131F);
 }
 
 /* Desk screen */

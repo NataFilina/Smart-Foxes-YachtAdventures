@@ -109,7 +109,7 @@ input {
     border: none;
     border-bottom: 1px solid #F6F5EF;
     background: transparent;
-    padding-left: 16px;
+    padding-left: 2px;
     height: 16px;
     color: #F6F5EF;
     margin-bottom: 24px;
@@ -121,7 +121,7 @@ input {
 }
 
 .rent__form-name-textarea {
-    padding-left: 16px;
+    padding-left: 2px;
     height: 58px;
     background-color: transparent;
     resize: none;

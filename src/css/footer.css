@@ -44,6 +44,7 @@
     .footer-wrap {
         display: flex;
         align-items: flex-start;
+        margin-bottom: 100px;
     }
 }
 /* dekstop */
@@ -110,6 +111,13 @@ height: 13px;
 .footer-nav-item:not(:last-child) {
     margin-bottom: 14px;
 }
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .footer-nav-item:not(:last-child) {
+        margin-bottom: 24px;
+}
+}
+
 .nav-link {
 font-size: 14px;
 font-weight: 700;
@@ -158,8 +166,7 @@ margin-bottom: 16px;
     gap: 14px;
     align-items: center;
     justify-content: center;
-    /* position: relative; */
-  }
+   }
 .footer-ellipse::after {
 width: 420px;
 height: 420px;
@@ -172,11 +179,19 @@ filter: blur(100px);
 content: "";
 position: absolute;
 transform:  translateX(-16px) translateY(-65px) rotate(-44.916deg);
-
 }
-
-/* dekstop */
-@media only screen and (min-width: 1280px) {
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .footer-ellipse::after {
+        width: 419px;
+        height: 419px;
+        transform: rotate(-45.565deg);
+        border-radius: 419px;
+        transform:  translateX(267px) translateY(-65px) rotate(-44.916deg);
+    }
+}
+/* tablet */
+@media only screen and (min-width: 768px) {
     .footer-remark-list {
         gap: 32px;
     }

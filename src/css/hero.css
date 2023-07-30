@@ -211,13 +211,13 @@
   /* background-color: linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%); */
 }
 .background-hero-image {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 .hero-owner-yaht {
   display: flex;
-  width: 287px;
+  min-width: 287px;
   height: auto;
   justify-content: center;
   align-items: center;

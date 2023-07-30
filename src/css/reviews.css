@@ -64,13 +64,7 @@ img {
 }
 
 
-.link {
-    text-decoration: none;
-}
 
-.list {
-    list-style: none;
-}
 
 .visually-hidden {
     position: absolute;
@@ -89,7 +83,7 @@ img {
 /* from 6 HW */
 .container {}
 
-.reviews-title {
+.reviews-title-yacht {
     width: 335px;
     font-family: DM Sans;
         font-size: 24px;
@@ -100,6 +94,18 @@ img {
         letter-spacing: -1.08px;
         background: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
             background-clip: text;
+            margin-bottom: 24px;
+}
+
+.reviews-title-other {
+    width: 335px;
+        font-family: DM Sans;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.2;
+        /* 28.8px */
+        letter-spacing: -1.08px;
 }
 
 .reviews-customers {
@@ -112,19 +118,45 @@ img {
         line-height: 1.4;
         /* 19.6px */
         letter-spacing: -0.28px;
+        margin-bottom: 40px;
 }
 
 .customers {}
 
 .list {}
 
-.customers-item {}
+.customers-item {
+    padding: 24px;
+    display: flex;
+    border: 1px solid #1F212D;
+        border-radius: 24px;
+        width: 307px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        background: #1F212D;
+        flex-shrink: 0;
+}
 
 .customers-card {}
 
 .customers-card-img {
     /* position: relative; */
+margin: auto;
+display: block;
+    margin-bottom: 18px;
     
+        width: 48px;
+        height: 48px;
+        
+        /* padding: 12px; */
+        /* align-items: center; */
+        gap: 8px;
+        /* border-radius: 72px; */
+        
+        /* Card shadow */
+        box-shadow: 0px 2px 32px 4px rgba(18, 20, 23, 0.02);    
 }
 
 .customers-name {
@@ -137,6 +169,7 @@ img {
         line-height: 1.1;
         /* 17.6px */
         letter-spacing: -0.72px;
+        margin-bottom: 8px;
 }
 
 .customers-review {
@@ -162,6 +195,7 @@ img {
 .reviews {
     display: none;
     background-color: var(--dark-blue, #11131F);
+    margin-top: 80px;    
 }
 
 /* Desk screen */

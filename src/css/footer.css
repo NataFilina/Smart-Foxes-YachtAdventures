@@ -50,7 +50,8 @@
 /* dekstop */
 @media only screen and (min-width: 1280px) {
     .footer-wrap {
-     align-items: baseline;
+        margin-bottom: 132px;
+        justify-content: space-between;
     }
 }
 .footer-thumb {
@@ -68,7 +69,7 @@
 /* dekstop */
 @media only screen and (min-width: 1280px) {
     .footer-thumb {
-        margin-right: 314px;
+        /* margin-right: 314px; */
     }
 }
 /* tablet */
@@ -105,7 +106,8 @@ height: 13px;
     .footer-nav-list {
         flex-direction: row;
         gap: 24px;
-        margin-right: 315px;
+        align-items: normal;
+        /* margin-right: 315px; */
     }
 }
 .footer-nav-item:not(:last-child) {

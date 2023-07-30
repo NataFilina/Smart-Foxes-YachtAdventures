@@ -66,7 +66,6 @@
   .services-item:last-child {
     left: 372px;
     right: 472px;
-    background-image: image-set();
   }
 }
 
@@ -77,12 +76,14 @@
   height: 335px;
   margin: 0 auto;
   border-radius: 40px;
+  background-size: cover;
   background: linear-gradient(
     0deg,
     rgba(17, 19, 31, 0.2) 0%,
     rgba(17, 19, 31, 0.2) 100%
   );
-  /* ); lightgray -15.688px -136.978px / 138.209% 164.622% no-repeat; */
+  /* url(../img/services/diving-mob@1x.png),
+    lightgray -15.345px 0px / 123.898% 100% no-repeat; */
 }
 
 @media only screen and (min-width: 768px) {

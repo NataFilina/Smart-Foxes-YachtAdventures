@@ -10,12 +10,80 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"/>
     
-    <script type="module" crossorigin src="/Smart-Foxes-YachtAdventures/assets/index-a4455e54.js"></script>
-    <link rel="stylesheet" href="/Smart-Foxes-YachtAdventures/assets/index-623cdb4a.css">
+    <script type="module" crossorigin src="/Smart-Foxes-YachtAdventures/assets/index-3c5701e7.js"></script>
+    <link rel="stylesheet" href="/Smart-Foxes-YachtAdventures/assets/index-112306f8.css">
   </head>
   <body>
-    
+    <!--Header section-->
+<header class="header">
+  <div class="header-container container">
+    <div class="header-logo">
+      <img class="header-icon-logo" src="../img/logo.png" alt="yacht" />
+      <a class="header-link-logo" href="./index.html"> Yacht Adventures </a>
+    </div>
+    <nav class="header-nav">
+      <ul class="header-list">
+        <li class="header-item">
+          <a href="#about" class="header-nav-link">About</a>
+        </li>
+        <li class="header-item">
+          <a href="#yachts" class="header-nav-link">Yachts</a>
+        </li>
+        <li class="header-item">
+          <a href="#reviews" class="header-nav-link">Reviews</a>
+        </li>
+      </ul>
+    </nav>
+    <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="menu-toggle-icon" width="24" height="24">
+        <use href="../img/icons.svg#icon-gg-menu-left"></use>
+      </svg>
+    </button>
+  </div>
+</header>
 
+<!--Mobile menu-->
+<div class="mobile-menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg class="mobile-close-icon" fill="currentColor" width="24" height="24">
+      <path
+        fill-rule="evenodd"
+        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+        clip-rule="evenodd"
+      ></path>
+    </svg>
+  </button>
+
+  <div class="mobile-logo">
+    <img class="header-icon-logo" src="../img/logo.png" alt="yacht" />
+    <a class="header-link-logo" href="./index.html"> Yacht Adventures </a>
+  </div>
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+      <a class="mobile-menu-link" href="#about">About</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a class="mobile-menu-link" href="#yachts">Yachts</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a class="mobile-menu-link" href="#reviews">Reviews</a>
+    </li>
+  </ul>
+</div>
+
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
+<script>
+  src = '../js/mobile-menu.js';
+</script>
 
     <main>
       <section class="hero-section">

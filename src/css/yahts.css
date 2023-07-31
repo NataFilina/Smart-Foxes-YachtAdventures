@@ -198,13 +198,21 @@ letter-spacing: -0.81px;
   }
 }
 .div-yahts {
+  position: relative;
     padding-top: 164px;
     padding-bottom: 164px;
 
     display: flex;
 }
-
+.yahts-icon-left {
+  position: absolute;
+  bottom: -50%;
+  
+  stroke: white;
+  border: 2px solid var(--primary-text-color);
+}
 .yahts-list {
+  
     display: flex;
     gap: 16px;
     margin: 0 auto;

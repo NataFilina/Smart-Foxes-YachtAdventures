@@ -2,7 +2,7 @@
 --dark-blue: #11131F;
 }
 
-/* from 6 HW */
+
 
 body {
     min-height: 100vh;
@@ -43,7 +43,8 @@ img {
     min-width: 320px;
     max-width: 374px;
     /* padding: 0 16px; */
-    margin: 0 ;    
+    margin-left: 32;   
+    margin-right: 32px; 
 }
 
 /* Tablet  */
@@ -68,21 +69,6 @@ img {
 
 
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-/* from 6 HW */
 .container {}
 
 .reviews-title-yacht {
@@ -125,6 +111,7 @@ img {
         /* 19.6px */
         letter-spacing: -0.28px;
         margin-bottom: 40px;
+        /* position: fixed; */
 }
 
 .customers {}
@@ -148,6 +135,7 @@ img {
 }
 
 .customers-card {
+    overflow-x: hidden;
 }
 
 .customers-card-img {
@@ -202,6 +190,15 @@ flex-wrap: nowrap;
   |============================
 */
 
+/* Mobile */
+
+@media only screen and (min-width: 375px) {
+
+.hidden-for-tab-and-mob,
+.hidden-only-mob {
+    display:none;
+}
+
 .reviews {
     display: initial;
     background-color: var(--dark-blue, #11131F);
@@ -214,30 +211,73 @@ flex-wrap: nowrap;
     gap: 24px;
     padding-bottom: 120px;
 }
+}
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
+
+   
+
     .reviews {
         display: initial;
+        margin-top: 100px;
+    }
+        
+    .customers {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 16px;
+        padding-bottom: 45px;
+        /* this padding is between reviews_clients and arrow up (стрілочка - якірне посилання на перехід до верху сторінки) */
     }
 
-        .customers-item {
+    .customers-item {
     
-            width: calc((100% - 48px) / 2);
-            justify-content: center;
-            width: 307px;
-            height: 160px;
-            display: flex;
-            flex-wrap: nowrap;    
-        }
-        
-        .customers {
-            display: flex;
-            flex-wrap: nowrap;
-            gap: 24px;
-            padding-bottom: 120px;
+        width: calc((100% - 48px) / 2);
+        justify-content: center;
+        width: 307px;
+        height: 160px;
+        display: flex;
+        flex-wrap: nowrap;    
+    }
+
+     .hidden-for-tab-and-mob {
+            display: none;
         }
 
+        .reviews-title-yacht {
+        width: 497px;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 1.2; 
+        /* 38.4px */
+        letter-spacing: -1.44px;
+    }
+
+.reviews-title-other {
+    /* background-color: #F6F5EF;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: DM Sans; */
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -1.44px;
+}
+
+.reviews-customers {
+    width: 273px;    
+    font-size: 16px;
+    font-style: normal;
+    
+    letter-spacing: -0.32px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
 
 }
 
@@ -245,13 +285,15 @@ flex-wrap: nowrap;
 @media only screen and (min-width: 1280px) {
     .reviews {
         display: initial;
+        margin-top: 164px;
     }
 
     .customers {
         display: flex;
         flex-wrap: nowrap;
-        gap: 24px;
-        padding-bottom: 120px;
+        gap: 32px;
+        padding-bottom: 64px;
+        /* this padding is between reviews_clients and arrow up (стрілочка - якірне посилання на перехід до верху сторінки) */
     }
 
     .customers-item {
@@ -264,4 +306,6 @@ flex-wrap: nowrap;
         flex-wrap: nowrap;
 
     }
+
+        /* justify-content: space-around; */
 }

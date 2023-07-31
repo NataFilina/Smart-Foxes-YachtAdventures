@@ -73,9 +73,9 @@
 @media only screen and (min-width: 1280px) {
   .services-list {
     flex-direction: row;
-    /* gap: 64px; */
-    row-gap: 64px;
-    column-gap: 64px;
+    gap: 64px;
+    /* row-gap: 64px;
+    column-gap: 64px; */
   }
 }
 
@@ -93,6 +93,11 @@
   .services-item:last-child {
     align-self: flex-start;
     left: 64px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .services-item:nth-child(2) {
   }
 }
 
@@ -145,7 +150,7 @@
 @media only screen and (min-width: 1280px) {
   .img-two {
     width: 440px;
-    height: 448px;
+    height: 428px;
   }
 }
 

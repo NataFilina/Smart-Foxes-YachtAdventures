@@ -15,6 +15,7 @@
     margin-bottom: -40px;
     overflow: hidden;
     position: relative;
+    padding-bottom: 80px;
 }
 
 .rent__img-box {
@@ -238,7 +239,7 @@
     }
 
     .rent {
-        margin-bottom: 100px;
+        padding-bottom: 100px;
     }
 
     .rent__first-box {
@@ -338,7 +339,7 @@
     }
 
     .rent {
-        margin-bottom: 164px;
+        padding-bottom: 164px;
     }
 
     .rent__img {

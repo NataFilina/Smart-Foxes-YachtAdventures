@@ -19,6 +19,41 @@
   }
 }
 
+.services-container {
+  position: relative;
+}
+
+.services-background {
+  position: absolute;
+  width: 323px;
+  height: 323px;
+  transform: rotate(-44.916deg);
+  /* flex-shrink: 0; */
+  border-radius: 323px;
+  opacity: 0.6000000238418579;
+  background: #91afba;
+  filter: blur(100px);
+  bottom: 40%;
+  right: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  .services-background {
+    width: 414px;
+    height: 414px;
+    border-radius: 414px;
+    bottom: 30%;
+    right: 70%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .services-background {
+    bottom: 60%;
+    right: 70%;
+  }
+}
+
 .services-title {
 }
 
@@ -26,7 +61,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* align-items: center; */
   gap: 20px;
 }
 
@@ -71,19 +105,13 @@
 
 .services-wrapper {
 }
+
 .services-img {
   width: 335px;
   height: 335px;
   margin: 0 auto;
   border-radius: 40px;
   background-size: cover;
-  background: linear-gradient(
-    0deg,
-    rgba(17, 19, 31, 0.2) 0%,
-    rgba(17, 19, 31, 0.2) 100%
-  );
-  /* url(../img/services/diving-mob@1x.png),
-    lightgray -15.345px 0px / 123.898% 100% no-repeat; */
 }
 
 @media only screen and (min-width: 768px) {

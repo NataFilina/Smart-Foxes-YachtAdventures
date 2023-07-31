@@ -206,10 +206,35 @@ letter-spacing: -0.81px;
 }
 .yahts-icon-left {
   position: absolute;
-  bottom: -50%;
+  bottom: 124px;
+  left: 111px;
   
   stroke: white;
   border: 2px solid var(--primary-text-color);
+  border-radius: 60px;
+  padding: 14px 14px;
+  width: 46px;
+}
+@media only screen and (min-width: 768px) {
+  .yahts-icon-left {
+    display: none;
+  }
+}
+.yahts-icon-right {
+  position: absolute;
+  bottom: 124px;
+  left: 175px;
+  
+  stroke: white;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 60px;
+  padding: 14px 14px;
+  width: 46px;
+}
+@media only screen and (min-width: 768px) {
+  .yahts-icon-right {
+    display: none;
+  }
 }
 .yahts-list {
   
@@ -233,7 +258,7 @@ letter-spacing: -0.81px;
     display: none;
   }
 }
-@media only screen and (max-width: 1215.98px) {
+@media only screen and (max-width: 1279.98px) {
     .card-3 {
       display: none;
     }

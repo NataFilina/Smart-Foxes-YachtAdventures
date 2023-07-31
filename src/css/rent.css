@@ -13,7 +13,7 @@
 .rent {
     margin: 0 auto;
     margin-bottom: -40px;
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
 }
 
@@ -26,6 +26,7 @@
     font-style: normal;
     line-height: 40px;
     letter-spacing: -1.62px;
+    color: var(--primary-text-color);
 
     margin-bottom: 16px;
 }
@@ -62,6 +63,7 @@
     font-size: 14px;
     line-height: 16.8px;
     letter-spacing: -0.63px;
+    color: var(--primary-text-color);
 }
 
 .rent__form-name-input {

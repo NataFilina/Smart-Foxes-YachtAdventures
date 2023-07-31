@@ -1,5 +1,6 @@
 :root {
 --dark-blue: #11131F;
+background-color: #11131F;
 }
 
 .reviews-title-yacht {
@@ -196,7 +197,7 @@ flex-wrap: nowrap;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: -1.44px;
-}
+    }
 
 .reviews-customers {
     width: 273px;    
@@ -208,7 +209,7 @@ flex-wrap: nowrap;
     display: flex;
     justify-content: flex-end;
     
-}
+    }
 
 }
 

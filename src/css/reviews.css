@@ -44,6 +44,7 @@ background-color: #11131F;
         letter-spacing: -0.28px;
         margin-bottom: 40px;
         /* position: fixed; */
+        
 }
 
 .customers {}
@@ -52,8 +53,8 @@ background-color: #11131F;
 
 .customers-item {
     padding: 24px;
-    display: flex;
-    flex-wrap: nowrap;
+    /* display: flex;
+    flex-wrap: nowrap; */
     
     border: 1px solid #1F212D;
         border-radius: 24px;
@@ -200,14 +201,17 @@ flex-wrap: nowrap;
     }
 
 .reviews-customers {
+    
     width: 273px;    
     font-size: 16px;
     font-style: normal;
     
     letter-spacing: -0.32px;
     margin-bottom: 40px;
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex;
+    justify-content: flex-end; */
+    display: block;
+    text-align: right;
     
     }
 
@@ -228,9 +232,20 @@ flex-wrap: nowrap;
         /* this padding is between reviews_clients and arrow up (стрілочка - якірне посилання на перехід до верху сторінки) */
     }
 
+    .reviews-customers {
+        margin-top: 32px;
+    }
+
+    .reviews-wrap-title {
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 1300px;
+        justify-content:space-between;
+    }
+
     .customers-item {
         
-        width: calc((100% - 48px) / 3);
+        /* width: calc((100% - 48px) / 3); */
         justify-content: center;
         width: 307px;
         height: 160px;

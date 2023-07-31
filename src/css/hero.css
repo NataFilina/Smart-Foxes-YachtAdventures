@@ -1,3 +1,4 @@
+
 .hero-container {
     display: flex;
     min-width: 335px;
@@ -210,10 +211,30 @@
   align-items: flex-end;
   /* background-color: linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%); */
 }
+@media only screen and (min-width: 1280px) {
+  .hero-owner-container {
+    width: 462.022px;
+    height: 651.365px;
+    width: 100%;
+    height: 465.105px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: flex-end;
+    top: 142px;
+    left: 186px;
+  }
+}
 .background-hero-image {
   /* width: 100%; */
   display: flex;
   justify-content: center;
+}
+@media only screen and (min-width: 1280px) {
+  .background-hero-image {
+    min-width: 426px;
+    height: 598px;
+  }
 }
 .hero-owner-yaht {
   display: flex;
@@ -226,13 +247,38 @@
   left: 43px;
   z-index: 1;
 }
+@media only screen and (min-width: 1280px) {
+  .hero-owner-yaht {
+    width: 378px;
+    height: 221px;
+    display: flex;
+    min-width: 287px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 155px;
+    left: 1px;
+    z-index: 1;
+  }
+}
 .hero-clients-block {
+  width: 135px;
+  height: 76px;
   display: flex;
   align-content: stretch;
   flex-wrap: nowrap;
   position: absolute;
   top: 63px;
   left: 38px;
+}
+@media only screen and (min-width: 1280px) {
+  .hero-clients-block {
+    width: 149px;
+    height: 82px;
+    top: -96px;
+      left: 12px;
+  }
 }
 /* .hero-clients {
   width: 48px;
@@ -283,4 +329,41 @@
   position: absolute;
   top: 75px;
   left: 234px;
+}
+@media only screen and (min-width: 1280px) {
+  .hero-owner-image {
+    width: 233px;
+    height: 233px;
+    top: -46px;
+    left: 238px;
+  }
+}
+
+.hero-owner-text {
+  display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+  position: absolute;
+  width: 287px;
+  top: 371px;
+  left: 43px;
+  color: #11131F;
+  font-family: DM Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -2.16px;
+}
+.hero-owner-text-item {
+  
+  min-width: 169px;
+  color: #11131F;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.63px;
 }

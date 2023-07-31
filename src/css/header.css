@@ -143,6 +143,7 @@
     height: 100vh;
     padding-top: 24px;
     padding-left: 20px;
+    padding-right: 20px;
     background-color: var(--bg-color);
     z-index: 999;
     transform: translateX(100%);

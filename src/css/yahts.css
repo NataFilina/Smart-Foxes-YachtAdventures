@@ -11,7 +11,7 @@
     max-width: 641px;
   }
 }
-@media only screen and (min-width: 1216px) {
+@media only screen and (min-width: 1280px) {
     .div-yahts-title {
         max-width: 882px;
     }
@@ -48,7 +48,7 @@ height: 195px;
     filter: blur(100px);
     }
   }
-@media only screen and (min-width: 1216px) {
+@media only screen and (min-width: 1280px) {
   .div-yahts-title::after {
     content: '';
     position: absolute;
@@ -91,7 +91,7 @@ margin-bottom: 40px;
   margin-bottom: 64px;
     }
   }
-@media only screen and (min-width: 1216px) {
+@media only screen and (min-width: 1280px) {
   .yahts-title {
     font-size: 100px;
 font-weight: 500;
@@ -135,7 +135,7 @@ filter: blur(100px);
 
   }
 }
-@media only screen and (min-width: 1216px) {
+@media only screen and (min-width: 1280px) {
   .yahts-title::after {
     content: '';
     position: absolute;
@@ -253,7 +253,7 @@ letter-spacing: -0.81px;
     width: 312px;
   }
 }
-@media only screen and (min-width: 1216px) {
+@media only screen and (min-width: 1280px) {
   .yahts-img {
     margin: 16px 16px 32px 16px;
     width: 322px;

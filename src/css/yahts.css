@@ -1,44 +1,17 @@
-.section {}
-
-.container {
-  min-width: 320px;
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-@media only screen and (min-width: 1216px) {
-  .container {
-    max-width: 1216px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
 .div-yahts-title {
-  position: relative;
-  max-width: 310px;
-  margin: 0 auto;
+    position: relative;
+    max-width: 310px;
+    margin: 0 auto;
 }
-
 @media only screen and (min-width: 768px) {
   .div-yahts-title {
     max-width: 641px;
   }
 }
-
-@media only screen and (min-width: 1216px) {
-  .div-yahts-title {
-    max-width: 882px;
-  }
+@media only screen and (min-width: 1280px) {
+    .div-yahts-title {
+        max-width: 882px;
+    }
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -73,9 +46,7 @@
     background: #A6A9B2;
     filter: blur(100px);
   }
-}
-
-@media only screen and (min-width: 1216px) {
+@media only screen and (min-width: 1280px) {
   .div-yahts-title::after {
     content: '';
     position: absolute;
@@ -119,9 +90,7 @@
     max-width: 641px;
     margin-bottom: 64px;
   }
-}
-
-@media only screen and (min-width: 1216px) {
+@media only screen and (min-width: 1280px) {
   .yahts-title {
     font-size: 100px;
     font-weight: 500;
@@ -167,8 +136,7 @@
 
   }
 }
-
-@media only screen and (min-width: 1216px) {
+@media only screen and (min-width: 1280px) {
   .yahts-title::after {
     content: '';
     position: absolute;
@@ -301,8 +269,7 @@
     width: 312px;
   }
 }
-
-@media only screen and (min-width: 1216px) {
+@media only screen and (min-width: 1280px) {
   .yahts-img {
     margin: 16px 16px 32px 16px;
     width: 322px;

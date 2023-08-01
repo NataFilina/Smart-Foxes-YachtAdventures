@@ -5,6 +5,9 @@
     display: none;
 }
 
+main {
+    overflow-x: hidden;
+}
 
 /* ==================== */
 /* ========rent======== */
@@ -341,6 +344,8 @@
 @media screen and (min-width: 1280px) {
     .rent__first-box.container {
         overflow: visible;
+        max-width: 1280px;
+        padding: 0 184px;
     }
 
     .rent {
@@ -353,6 +358,15 @@
         height: 191px;
         width: 282px;
         margin-right: 188px;
+    }
+
+    .rent__img-box {
+        width: 282px;
+        margin-right: 188px;
+    }
+
+    .rent__img-box-title {
+        margin-bottom: 64px;
     }
 
     .rent__form {

@@ -38,8 +38,8 @@
   opacity: 0.6000000238418579;
   background: #91afba;
   filter: blur(100px);
-  bottom: 40%;
-  right: 70%;
+  top: 306px;
+  right: 240px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -47,15 +47,15 @@
     width: 414px;
     height: 414px;
     border-radius: 414px;
-    bottom: 35%;
-    right: 70%;
+    top: 566px;
+    left: -252px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .services-background {
-    bottom: 45%;
-    right: 70%;
+    top: 241px;
+    right: 245px;
   }
 }
 

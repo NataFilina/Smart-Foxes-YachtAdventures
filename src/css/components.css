@@ -13,6 +13,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
 }
+main {
+    overflow-x: hidden;
+}
 .container {
     min-width: 320px;
     max-width: 375px;

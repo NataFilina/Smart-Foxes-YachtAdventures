@@ -15,7 +15,7 @@ body {
 }
 @media screen and (min-width: 1280px) {
     body {
-        background-image: url(../img/LooperGroup.png);
+        background-image: url(../img/LooperGroup.svg);
         background-size: cover;
         background-position: 50% 50%;
         background-repeat: no-repeat;
@@ -39,7 +39,8 @@ body {
 
 @media screen and (min-width: 1280px) {
     .container {
-        max-width: 1216px;
+        max-width: 1280px;
+        overflow: hidden;
     }
 }
 

@@ -12,9 +12,8 @@
 
 .rent {
     margin: 0 auto;
-    margin-bottom: -40px;
-    overflow: hidden;
-    position: relative;
+    overflow-x: hidden;
+    padding-bottom: 80px;
 }
 
 .rent__img-box {
@@ -45,7 +44,7 @@
 }
 
 
-.rent__form::before {
+.rent__ellipse::before {
     position: absolute;
     height: 283px;
     width: 283px;
@@ -56,7 +55,7 @@
     opacity: 0.6000000238418579;
     background-color: #91AFBA;
     filter: blur(100px);
-    transform: rotate(-44.916deg) translateX(35px) translateY(195px);
+    transform: translateX(198px) translateY(-200px) rotate(-44.916deg);
 }
 
 .rent__form-name-text {
@@ -114,7 +113,7 @@
 }
 
 .rent__button-icon {
-    width: 18;
+    width: 18px;
     height: 100%;
     margin-left: 16px;
     fill: var(--primary-text-color);
@@ -238,7 +237,7 @@
     }
 
     .rent {
-        margin-bottom: 100px;
+        padding-bottom: 100px;
     }
 
     .rent__first-box {
@@ -274,8 +273,11 @@
         justify-content: end;
     }
 
-    .rent__form::before {
-        transform: translateX(240px) translateY(120px) rotate(-44.916deg);
+    .rent__ellipse::before {
+        height: 413px;
+        width: 413px;
+        border-radius: 413px;
+        transform: translateX(-120px) translateY(95px) rotate(-44.916deg);
     }
 
     .rent__form-name-input {
@@ -338,7 +340,7 @@
     }
 
     .rent {
-        margin-bottom: 164px;
+        padding-bottom: 164px;
     }
 
     .rent__img {
@@ -353,8 +355,15 @@
         width: 443px;
     }
 
-    .rent__form::before {
-        transform: translateX(380px) translateY(120px) rotate(-44.916deg);
+    .rent__form-name-textarea {
+        margin-bottom: 64px;
+    }
+
+    .rent__ellipse::before {
+        width: 414px;
+        height: 414px;
+        border-radius: 414px;
+        transform: translateX(-25px) translateY(110px) rotate(-44.916deg);
     }
 
     /* ========popup===== */

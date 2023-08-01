@@ -83,9 +83,20 @@
   position: relative;
 }
 
+@media only screen and (min-width: 1280px) {
+  .services-item {
+    width: calc((100% - 64px) / 2);
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .services-item:nth-child(2) {
     align-self: flex-end;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .services-item:nth-child(2) {
   }
 }
 
@@ -97,14 +108,9 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .services-item:nth-child(2) {
-  }
-}
-
-@media only screen and (min-width: 1280px) {
   .services-item:last-child {
     left: 372px;
-    right: 472px;
+    /* right: 472px; */
   }
 }
 

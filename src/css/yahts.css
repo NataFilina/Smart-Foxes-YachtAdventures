@@ -183,48 +183,66 @@
 }
 
 .div-yahts {
-  position: relative;
-  padding-top: 164px;
-  padding-bottom: 164px;
+    padding-top: 164px;
+    margin-bottom: 24px;
 
-  display: flex;
+    display: flex;
+    align-items: center;
+
 }
 
-.yahts-icon-left {
-  position: absolute;
-  bottom: 124px;
-  left: 111px;
-
-  stroke: white;
-  border: 2px solid var(--primary-text-color);
-  border-radius: 60px;
-  padding: 14px 14px;
-  width: 46px;
 }
 
 @media only screen and (min-width: 768px) {
-  .yahts-icon-left {
-    display: none;
+  .div-yahts {
+    margin-bottom: 32px;
+    
   }
 }
 
+.buttom-tab-style-left,
+.buttom-tab-style-right {
+ 
+width: 50px;
+height: 36px;
+border: 1px solid var(--primary-text-color);
+border-radius: 60px;
+background-color: transparent;
+}
+@media only screen and (max-width: 1279.98px) {
+  .buttom-tab-style-left,
+  .buttom-tab-style-right {
+    display: none;
+  }
+}
+.yahts-icon-left,
 .yahts-icon-right {
-  position: absolute;
-  bottom: 124px;
-  left: 175px;
-
-  stroke: white;
-  border: 2px solid var(--primary-text-color);
-  border-radius: 60px;
-  padding: 14px 14px;
-  width: 46px;
+  fill: var(--primary-text-color);
+}
+.swiper {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
 }
 
 @media only screen and (min-width: 768px) {
-  .yahts-icon-right {
+  .swiper {
+    gap: 16px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .swiper {
     display: none;
   }
 }
+.buttom-mob-style {
+  width: 50px;
+  height: 36px;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 60px;
+  background-color: transparent;
+}
+
 
 .yahts-list {
 

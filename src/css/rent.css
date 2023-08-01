@@ -10,12 +10,7 @@
 /* ========rent======== */
 /* ==================== */
 
-body main {
-    overflow-x: hidden;
-}
-
 .rent {
-    margin: 0 auto;
     padding-bottom: 80px;
 }
 
@@ -49,7 +44,6 @@ body main {
 
 .rent__ellipse {
     position: relative;
-    overflow-x: visible;
 }
 
 
@@ -346,7 +340,7 @@ body main {
 
 @media screen and (min-width: 1280px) {
     .rent__first-box.container {
-        padding: 0 184px;
+        overflow: visible;
     }
 
     .rent {

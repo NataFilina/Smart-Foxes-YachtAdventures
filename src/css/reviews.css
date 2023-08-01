@@ -4,6 +4,7 @@ background-color: #11131F;
 }
 
 .reviews-title-yacht {
+    
     width: 335px;
     font-family: DM Sans;
         font-size: 24px;
@@ -179,7 +180,9 @@ flex-wrap: nowrap;
         }
 
         .reviews-title-yacht {
+            display: block;
         width: 497px;
+        height: 114px;
         font-size: 32px;
         font-weight: 500;
         line-height: 1.2; 
@@ -200,19 +203,36 @@ flex-wrap: nowrap;
     letter-spacing: -1.44px;
     }
 
+.flex-paragraph {
+    display: flex;
+}
+
 .reviews-customers {
     
-    width: 273px;    
+    width: 273px;
+    height: 110px;    
     font-size: 16px;
     font-style: normal;
     
     letter-spacing: -0.32px;
     margin-bottom: 40px;
+    margin-left: 463px;
     /* display: flex;
-    justify-content: flex-end; */
-    display: block;
-    text-align: right;
-    
+    align-self: flex-end; */
+    /* justify-content: flex-end; */
+    /* display: block;
+    text-align: right;     */
+    }
+
+    .reviews-wrap-title {
+        /* display: flex; */
+        /* flex: column; */
+        /* flex-wrap: wrap; */
+     }
+
+     .reviews-customers {        
+        align-self: flex-end;
+        /* margin-top: 146px; */
     }
 
 }
@@ -233,7 +253,8 @@ flex-wrap: nowrap;
     }
 
     .reviews-customers {
-        margin-top: 32px;
+        margin-bottom: 40px;
+        margin-top: 0px;
     }
 
     .reviews-wrap-title {

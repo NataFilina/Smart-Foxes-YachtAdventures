@@ -26,8 +26,8 @@ body {
     max-width: 375px;
     margin: 0 auto;
     padding: 0 20px;
-    outline: 2px solid red;
-    
+
+    /* outline:2px solid red; */
 }
 
 @media screen and (min-width: 768px) {

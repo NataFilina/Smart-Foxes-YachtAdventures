@@ -13,14 +13,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
 }
-@media screen and (min-width: 1280px) {
-    body {
-        background-image: url(../img/LooperGroup.svg);
-        background-size: cover;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-    }
-}
 .container {
     min-width: 320px;
     max-width: 375px;

@@ -10,11 +10,15 @@
 /* ========rent======== */
 /* ==================== */
 
+body main {
+    overflow-x: hidden;
+}
+
 .rent {
     margin: 0 auto;
-    overflow-x: hidden;
     padding-bottom: 80px;
 }
+
 
 .rent__img-box {
     margin-bottom: 40px;
@@ -41,6 +45,11 @@
 .rent__form {
     display: flex;
     flex-direction: column;
+}
+
+.rent__ellipse {
+    position: relative;
+    overflow-x: visible;
 }
 
 
@@ -110,6 +119,8 @@
     border-radius: 60px;
     border: 1px solid var(--primary-text-color);
     background-color: transparent;
+
+    /* margin-bottom: 80px; */
 }
 
 .rent__button-icon {
@@ -231,7 +242,7 @@
 /* =========================== */
 
 @media screen and (min-width: 768px) {
-    .container {
+    .rent__first-box.container {
         padding: 0 32px;
         max-width: 768px;
     }
@@ -334,8 +345,7 @@
 /* =========================== */
 
 @media screen and (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
+    .rent__first-box.container {
         padding: 0 184px;
     }
 

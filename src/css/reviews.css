@@ -17,7 +17,7 @@ background-color: #11131F;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;            
-        margin-bottom: 24px;
+        margin-bottom: 16px;
 }
 
 .reviews-title-other { 
@@ -35,6 +35,7 @@ background-color: #11131F;
 
 .reviews-customers {
     width: 335px;
+    text-align: center;
         color: var(--white, #F6F5EF);
         font-family: DM Sans;
         font-size: 14px;
@@ -56,6 +57,8 @@ background-color: #11131F;
     padding: 24px;
     /* display: flex;
     flex-wrap: nowrap; */
+            max-width: 335px;
+        
     
     border: 1px solid #1F212D;
         border-radius: 24px;
@@ -126,6 +129,12 @@ flex-wrap: nowrap;
 
 /* Mobile */
 
+/* @media only screen and (max-width: 35px) {
+    .hidden-for-tab-and-mob {
+            display: none;
+        }
+} */
+
 @media only screen and (min-width: 375px) {
 
 .hidden-for-tab-and-mob,
@@ -145,6 +154,11 @@ flex-wrap: nowrap;
     gap: 24px;
     padding-bottom: 120px;
 }
+
+
+
+
+
 }
 
 /* Tablet */
@@ -205,6 +219,10 @@ flex-wrap: nowrap;
 
 .flex-paragraph {
     display: flex;
+    flex: column;
+    align-self: flex-end;
+    justify-content: flex-end;
+    max-width: 770px;
 }
 
 .reviews-customers {
@@ -216,9 +234,9 @@ flex-wrap: nowrap;
     
     letter-spacing: -0.32px;
     margin-bottom: 40px;
-    margin-left: 463px;
-    /* display: flex;
-    align-self: flex-end; */
+    /* margin-left: 495px; */
+    /* display: flex;*/
+    
     /* justify-content: flex-end; */
     /* display: block;
     text-align: right;     */
@@ -229,12 +247,7 @@ flex-wrap: nowrap;
         /* flex: column; */
         /* flex-wrap: wrap; */
      }
-
-     .reviews-customers {        
-        align-self: flex-end;
-        /* margin-top: 146px; */
-    }
-
+    
 }
 
 /* Desk screen */
@@ -253,8 +266,7 @@ flex-wrap: nowrap;
     }
 
     .reviews-customers {
-        margin-bottom: 40px;
-        margin-top: 0px;
+        margin-bottom: 40px;        
     }
 
     .reviews-wrap-title {

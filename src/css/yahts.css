@@ -187,7 +187,7 @@ letter-spacing: -0.81px;
 
     display: flex;
     align-items: center;
-    z-index: 1;
+   
 }
 @media only screen and (min-width: 768px) {
   .div-yahts {

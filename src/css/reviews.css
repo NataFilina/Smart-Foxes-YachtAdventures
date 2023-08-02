@@ -191,7 +191,17 @@ display: none;
     padding-bottom: 120px;
 }
 
+ .flex-paragraph {
+    margin-left: 32px;
+ }
 
+.flex-button {
+    display: flex;
+    flex: column;
+    align-self: flex-end;
+    justify-content: flex-end;
+    max-width: 400px;
+} 
 
 }
 
@@ -252,12 +262,14 @@ display: none;
     letter-spacing: -1.44px;
     }
 
-.flex-paragraph {
+.flex-paragraph,
+.flex-button {
     display: flex;
     flex: column;
     align-self: flex-end;
     justify-content: flex-end;
     max-width: 770px;
+    margin-left: 0px;
 }
 
 .reviews-customers {
@@ -320,7 +332,7 @@ display: none;
     .reviews-wrap-title {
         display: flex;
         flex-wrap: nowrap;
-        max-width: 1180px;
+        max-width: 1148px;
         justify-content:space-between;
         margin-left: 32px;
     }
@@ -333,9 +345,15 @@ display: none;
         height: 160px;
         display: flex;
         flex-wrap: nowrap;
-
     }
 
+        .flex-button {
+            display: flex;
+            flex: column;
+            align-self: flex-end;
+            justify-content: flex-end;
+            max-width: 1170px;
+        }
         /* justify-content: space-around; */
 }
 

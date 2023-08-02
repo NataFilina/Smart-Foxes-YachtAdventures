@@ -152,8 +152,7 @@ filter: blur(100px);
   }
 } 
     
-.yahts-link {
-}
+
 .yacht-button {
     font-size: 14px;
     font-weight: 700;
@@ -318,8 +317,7 @@ opacity: 0.5;
 display: flex;
 gap: 32px;
 }
-.yahts-list-left {
-}
+
 .yahts-item-description-left {
     color: var(--primary-text-color);
 font-size: 14px;
@@ -330,8 +328,7 @@ text-transform: uppercase;
 .yahts-item-description-left:not(:last-child) {
     margin-bottom: 6px;
 }
-.yahts-list-right {
-}
+
 .yahts-item-description-right {
     color: var(--primary-text-color);
     font-size: 14px;
@@ -340,6 +337,4 @@ text-transform: uppercase;
 }
 .yahts-item-description-right:not(:last-child) {
     margin-bottom: 6px;
-}
-.yahts-item-description-right {
 }

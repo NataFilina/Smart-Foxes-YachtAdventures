@@ -1,3 +1,24 @@
+.yahts {
+  margin-top: -112px;
+}
+.yb-container {
+  position: relative;
+}
+.curved-lines-bg {
+  position: absolute;
+  top: 54px;
+  left: 0;
+  z-index: -2;
+  width: 1722px;
+  height: 1590px;
+  transform: rotate(7.506deg);
+
+}
+@media only screen and (max-width: 1279.98px) {
+  .curved-lines-bg {
+    display: none;
+  }
+}
 .div-yahts-title {
     position: relative;
     max-width: 310px;
@@ -154,17 +175,10 @@
     filter: blur(100px);
 
   }
-}
 
-.yahts-link {}
+} 
 
 .yacht-button {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 15.4px;
-  letter-spacing: -0.63px;
-
-  color: var(--primary-text-color);
   background-color: inherit;
 
   border-radius: 60px;
@@ -173,6 +187,30 @@
   padding: 14px 28px;
 
 }
+.yacht-button-link-rent {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.4px;
+  letter-spacing: -0.63px;
+
+  color: var(--primary-text-color);
+}
+@media only screen and (min-width: 768px) {
+  .yacht-button-link-rent {
+    letter-spacing: -0.81px;
+  }
+}
+
+.yacht-button:hover {
+  color: #93ABAE;
+  border-color: #93ABAE;
+}
+.yacht-button:focus {
+  color: #93ABAE;
+  border-color: #93ABAE;
+}
+
+
 
 @media only screen and (min-width: 768px) {
   .yacht-button {
@@ -252,7 +290,7 @@ background-color: transparent;
 
 .yahts-item {
   background: #1F212D;
-
+border-radius: 24px;
   width: 335px;
 }
 
@@ -269,7 +307,11 @@ background-color: transparent;
     display: none;
   }
 }
-
+@media only screen and (min-width: 1280px) {
+  .yahts-item {
+    width: 354px;
+  }
+}
 @media only screen and (max-width: 1279.98px) {
   .card-3 {
     display: none;
@@ -325,11 +367,12 @@ background-color: transparent;
 }
 
 .yahts-item-description-div {
-  display: flex;
-  gap: 32px;
+
+display: flex;
+gap: 32px;
 }
 
-.yahts-list-left {}
+
 
 .yahts-item-description-left {
   color: var(--primary-text-color);
@@ -340,10 +383,9 @@ background-color: transparent;
 }
 
 .yahts-item-description-left:not(:last-child) {
-  margin-bottom: 6px;
+ margin-bottom: 6px;
 }
 
-.yahts-list-right {}
 
 .yahts-item-description-right {
   color: var(--primary-text-color);
@@ -356,4 +398,3 @@ background-color: transparent;
   margin-bottom: 6px;
 }
 
-.yahts-item-description-right {}

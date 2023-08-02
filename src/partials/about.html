@@ -8,21 +8,77 @@
             </ul>
         </div>
         <div class="about-imgs">
-            <img class="about-imgs-item" 
-                srcset="/img/about/yaht1-desk@1x.png 1x, /img/about/yaht1-desk@2x.png 2x"
-                src="/img/about/yaht1-desk@1x.png"
-                alt="yaht1"
-            />
-            <img class="about-imgs-item"
-                srcset="/img/about/yaht2-desk@1x.png 1x, /img/about/yaht2-desk@2x.png 2x"
-                src="/img/about/yaht2-desk@1x.png"
-                alt="yaht2"
-            />
-            <img class="about-imgs-item" 
-                srcset="/img/about/yaht3-desk@1x.png 1x, /img/about/yaht3-desk@2x.png 2x"
-                src="/img/about/yaht3-desk@1x.png"
-                alt="yaht3"
-            />
+            <picture class="about-imgs-item" >
+                <source 
+                    width="533" 
+                    hight="473" 
+                    srcset="/img/about/yaht1-desk@1x.png 1x, /img/about/yaht1-desk@2x.png 2x"
+                    media="(min-width: 1280px)"
+                >
+                <source 
+                    width="704"
+                    hight="631"
+                    srcset="/img/about/yaht1-tab@1x.png 1x, /img/about/yaht1-tab@2x.png 2x" 
+                    media="(min-width: 768px)"
+                >
+                <source 
+                    width="335" 
+                    hight="524" 
+                    srcset="/img/about/yaht1-mob@1x.png 1x, /img/about/yaht1-mob@2x.png 2x"
+                    media="(min-width: 480px)">
+                <img 
+                    src="/img/about/yaht1-desk@1x.png"
+                    alt="yaht1"
+                />
+            </picture>
+            <picture class="about-imgs-item">
+                <source 
+                    width="309" 
+                    hight="289" 
+                    srcset="/img/about/yaht2-desk@1x.png 1x, /img/about/yaht2-desk@2x.png 2x" 
+                    media="(min-width: 1280px)"
+                >
+                <source 
+                    width="308" 
+                    hight="289"
+                    srcset="/img/about/yaht2-tab@1x.png 1x, /img/about/yaht2-tab@2x.png 2x" 
+                    media="(min-width: 768px)"
+                >
+                <source 
+                    width="335" 
+                    hight="289" 
+                    srcset="/img/about/yaht2-mob@1x.png 1x, /img/about/yaht2-mob@2x.png 2x" 
+                    media="(min-width: 480px)"
+                >                
+                <img 
+                    src="/img/about/yaht2-desk@1x.png" 
+                    alt="yaht2" 
+                />
+            </picture>
+            <picture class="about-imgs-item" >
+                <source 
+                    width="260" 
+                    hight="244" 
+                    srcset="/img/about/yaht3-desk@1x.png 1x, /img/about/yaht3-desk@2x.png 2x"
+                    media="(min-width: 1280px)"
+                >
+                <source 
+                    width="260" 
+                    hight="244"
+                    srcset="/img/about/yaht3-tab@1x.png 1x, /img/about/yaht3-tab@2x.png 2x" 
+                    media="(min-width: 768px)"
+                >
+                <source 
+                    width="260" 
+                    hight="244" 
+                    srcset="/img/about/yaht3-mob@1x.png 1x, /img/about/yaht3-mob@2x.png 2x"
+                    media="(min-width: 480px)"
+                >
+                <img 
+                    src="/img/about/yaht3-desk@1x.png" 
+                    alt="yaht3" 
+                />
+            </picture>
         </div>
     </div>
 </section>

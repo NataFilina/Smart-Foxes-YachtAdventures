@@ -200,7 +200,7 @@ display: none;
     justify-content: flex-end;
     max-width: 400px;
 } 
-
+}
 /* Tablet */
 @media only screen and (min-width: 768px) {
 
@@ -291,7 +291,7 @@ display: none;
         /* flex-wrap: wrap; */
      }
     
-.scrollTop {
+ .scrollTop {
     display: inline-flex;
     justify-content: left;
     align-items: center;
@@ -312,7 +312,6 @@ display: none;
         display: initial;
         margin-top: 164px;
     }
-
     .customers {
         display: flex;
         flex-wrap: nowrap;
@@ -320,11 +319,9 @@ display: none;
         padding-bottom: 64px;
         /* this padding is between reviews_clients and arrow up (стрілочка - якірне посилання на перехід до верху сторінки) */
     }
-
     .reviews-customers {
         margin-bottom: 40px;        
     }
-
     .reviews-wrap-title {
         display: flex;
         flex-wrap: nowrap;
@@ -332,7 +329,6 @@ display: none;
         justify-content:space-between;
         margin-left: 32px;
     }
-
     .customers-item {
         
         /* width: calc((100% - 48px) / 3); */
@@ -343,16 +339,13 @@ display: none;
         display: flex;
         flex-wrap: nowrap;
     }
-
-
-        .flex-button {
+    .flex-button {
             display: flex;
             flex: column;
             align-self: flex-end;
             justify-content: flex-end;
             max-width: 1170px;
-        }
-        /* justify-content: space-around; */
+    }
 }
 
 

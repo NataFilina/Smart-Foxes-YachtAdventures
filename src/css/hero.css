@@ -229,16 +229,11 @@
 }
 @media only screen and (min-width: 1280px) {
   .hero-owner-container {
-    width: 462px;
-    height: 651px;
-    width: 100%;
-    height: 465.105px;
-    display: flex;
-    position: absolute;
+    position: fixed;
     justify-content: center;
     align-items: flex-end;
-    top: 229px;
-    left: 219px;
+    top: 98px;
+    right: 804px;
   }
 }
 

@@ -1,8 +1,10 @@
 :root {
-    --dark-blue: #11131F;
+--dark-blue: #11131F;
+--background-color: #11131F;
 }
 
 .reviews-title-yacht {
+    
     width: 335px;
     font-family: DM Sans;
     font-size: 24px;
@@ -14,8 +16,9 @@
     background: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 24px;
+    -webkit-text-fill-color: transparent;            
+        margin-bottom: 16px;
+        margin-left: 32px;
 }
 
 .reviews-title-other {
@@ -28,21 +31,28 @@
     font-style: normal;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: -1.08px;
+    letter-spacing: -1.08px;  
+    margin-left: 32px;  
 }
 
 .reviews-customers {
     width: 335px;
-    color: var(--white, #F6F5EF);
-    font-family: DM Sans;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.4;
-    /* 19.6px */
-    letter-spacing: -0.28px;
-    margin-bottom: 40px;
-    /* position: fixed; */
+    text-align: center;
+        color: var(--white, #F6F5EF);
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.4;
+        /* 19.6px */
+        letter-spacing: -0.28px;
+        margin-bottom: 40px;
+        /* position: fixed; */
+        
+}
+
+.flex-paragraph {
+    max-width: 900px;
 }
 
 .customers {}
@@ -51,9 +61,9 @@
 
 .customers-item {
     padding: 24px;
-    display: flex;
-    flex-wrap: nowrap;
-
+    /* display: flex;
+    flex-wrap: nowrap; */
+            max-width: 335px;
     border: 1px solid #1F212D;
     border-radius: 24px;
     width: 307px;
@@ -121,9 +131,45 @@
   |============================
 */
 
+.scrollTop {
+    display: inline-flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-shrink: 0;
+    color: #93ABAE;
+    background: #93ABAE 0 0 no-repeat;
+  
+    width: 44px;
+    /*ширина кнопки*/
+    height: 44px;
+    
+    bottom: 5px;
+    /*при фіксованому положенні відступ знизу*/
+    left: 89%;
+    /*зсув вліво*/
+}
+
+.scrollTop:hover {
+    background-position: 0 -108px;
+}
+
+/*зміщення фону*/
+
 /* Mobile */
 
-@media only screen and (min-width: 375px) {
+ /* @media only screen and (max-width: 31px) {
+     .hidden-for-tab-and-mob {
+            display: none;
+        } 
+.customers-item {
+margin-top: 40px;
+display: none;
+} 
+
+} */
+
+
+@media only screen and (min-width: 32px) {
 
     .hidden-for-tab-and-mob,
     .hidden-only-mob {
@@ -136,13 +182,24 @@
         margin-top: 80px;
     }
 
-    .customers {
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 24px;
-        padding-bottom: 120px;
-    }
+.customers {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    padding-bottom: 120px;
 }
+
+ .flex-paragraph {
+    margin-left: 32px;
+ }
+
+.flex-button {
+    display: flex;
+    flex: column;
+    align-self: flex-end;
+    justify-content: flex-end;
+    max-width: 400px;
+} 
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
@@ -175,14 +232,17 @@
     .hidden-for-tab-and-mob {
         display: none;
     }
+  
+  .reviews-title-yacht {
+            display: block;
 
-    .reviews-title-yacht {
         width: 497px;
+        height: 114px;
         font-size: 32px;
         font-weight: 500;
-        line-height: 1.2;
-        /* 38.4px */
+        line-height: 1.2;        
         letter-spacing: -1.44px;
+        
     }
 
     .reviews-title-other {
@@ -191,24 +251,58 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: DM Sans; */
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.2;
-        letter-spacing: -1.44px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -1.44px;
     }
 
-    .reviews-customers {
-        width: 273px;
-        font-size: 16px;
-        font-style: normal;
+.flex-paragraph,
+.flex-button {
+    display: flex;
+    flex: column;
+    align-self: flex-end;
+    justify-content: flex-end;
+    max-width: 770px;
+    margin-left: 0px;
+}
 
-        letter-spacing: -0.32px;
-        margin-bottom: 40px;
-        display: flex;
-        justify-content: flex-end;
-
+.reviews-customers {
+    
+    width: 273px;
+    height: 110px;    
+    font-size: 16px;
+    font-style: normal;
+    
+    letter-spacing: -0.32px;
+    margin-bottom: 40px;
+    /* margin-left: 495px; */
+    /* display: flex;*/
+    
+    /* justify-content: flex-end; */
+    /* display: block;
+    text-align: right;     */
     }
+
+    .reviews-wrap-title {
+        /* display: flex; */
+        /* flex: column; */
+        /* flex-wrap: wrap; */
+     }
+    
+.scrollTop {
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+    flex-shrink: 0;
+    color: #93ABAE;
+    background: #93ABAE 0 0 no-repeat;
+
+    width: 64px;
+    /*ширина кнопки*/
+    height: 64px;
+  }
 
 }
 
@@ -227,16 +321,38 @@
         /* this padding is between reviews_clients and arrow up (стрілочка - якірне посилання на перехід до верху сторінки) */
     }
 
-    .customers-item {
+    .reviews-customers {
+        margin-bottom: 40px;        
+    }
 
-        width: calc((100% - 48px) / 3);
+    .reviews-wrap-title {
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 1148px;
+        justify-content:space-between;
+        margin-left: 32px;
+    }
+
+    .customers-item {
+        
+        /* width: calc((100% - 48px) / 3); */
+
         justify-content: center;
         width: 307px;
         height: 160px;
         display: flex;
         flex-wrap: nowrap;
-
     }
 
-    /* justify-content: space-around; */
+
+        .flex-button {
+            display: flex;
+            flex: column;
+            align-self: flex-end;
+            justify-content: flex-end;
+            max-width: 1170px;
+        }
+        /* justify-content: space-around; */
 }
+
+

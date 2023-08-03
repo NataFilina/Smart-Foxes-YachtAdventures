@@ -18,7 +18,7 @@
 /* tablet */
 @media only screen and (min-width: 768px) {
     .footer-container {
-        padding-top: 69px;
+        padding-top: 64px;
         padding-bottom: 16px;
     }
 }
@@ -56,7 +56,7 @@
 /* tablet */
 @media only screen and (min-width: 768px) {
     .footer-thumb {
-        margin-right: 135px;
+        margin-right: 128px;
     }
 }
 /* dekstop */
@@ -82,8 +82,11 @@ height: 13px;
 .footer-nav {
 }
 /* mobile */
-.footer-nav-list {
-    margin-bottom: 40px;
+
+@media only screen and (max-width: 767.98px) {
+    .footer-nav-list {
+        margin-bottom: 40px;
+}
 }
 /* tablet */
 @media only screen and (min-width: 768px) {
@@ -92,7 +95,7 @@ height: 13px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-right: 147px;
+        margin-right: 143px;
     }
 }
 /* dekstop */
@@ -130,6 +133,7 @@ font-weight: 700;
 line-height: 1.1; 
 text-transform: uppercase;
 letter-spacing: 0.42px;
+
 margin-bottom: 16px;
 }
 .footer-networks-list {

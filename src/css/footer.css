@@ -162,17 +162,17 @@ color: var(--primary-text-color)
 }
 .footer-networks-link:hover,
 .footer-networks-link:focus {
-    border: 1px solid red;
-    color: red;
+    border: 1px solid #A1B5BA;
+    color: #A1B5BA;
 }
 .footer-networks-icon {
       fill: var(--primary-text-color);
 }
 .footer-networks-link:hover .footer-networks-icon {
-    fill: red;
+    fill: #A1B5BA;
 }
 .footer-networks-link:focus .footer-networks-icon {
-    fill: red;
+    fill: #A1B5BA;
 }
 /* .paint0_linear_92_2210 {
     opacity: 0.0;

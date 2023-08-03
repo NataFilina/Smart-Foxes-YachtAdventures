@@ -25,7 +25,7 @@
             </div>
             <!-- label + textarea comment -->
             <div class="rent__form-content">
-                <label class="rent__form-name-text" for="comment" required>Comment</label>
+                <label class="rent__form-name-text" for="comment">Comment</label>
                 <textarea class="rent__form-name-textarea" name="comment" id="comment" minlength="5"
                     maxlength="147"></textarea>
             </div>
@@ -55,3 +55,28 @@
             to confirm your reservation and provide any additional information or assistance you may need.</p>
     </div>
 </div>
+<!-- =========== back to top ======== -->
+
+<button class="button__back-to-top" onclick="scrollToTop()" id="back-to-up">
+    <svg class="button__back-to-top-icon" width="8" height="16" viewbox="0 0 32 32">
+        <use href="/img/icons.svg#icon-arrow-up"></use>
+    </svg>
+</button>
+
+<script>
+    window.onscroll = () => {
+        toggleTopButton();
+    }
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleTopButton() {
+        if (document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20) {
+            document.getElementById('back-to-up').classList.remove('is-hidden');
+        } else {
+            document.getElementById('back-to-up').classList.add('is-hidden');
+        }
+    }
+</script>

@@ -116,9 +116,8 @@ main {
     border-radius: 60px;
     border: 1px solid var(--primary-text-color);
     background-color: transparent;
-
-    /* margin-bottom: 80px; */
 }
+
 
 .rent__button-icon {
     width: 18px;
@@ -148,6 +147,7 @@ main {
 .popup__window {
     position: absolute;
     cursor: default;
+    inset: 10px;
     transform: translate(-50%, -50%) scale(1);
     top: 50%;
     left: 50%;
@@ -203,6 +203,7 @@ main {
     /* 28.8px */
     letter-spacing: -1.08px;
 
+
     margin-bottom: 14px;
 }
 
@@ -215,7 +216,30 @@ main {
     letter-spacing: -0.28px;
 }
 
+/* ========================= */
+/* ======== button to back==== */
+/* ========================= */
 
+.button__back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+
+    width: 44px;
+    height: 44px;
+
+    text-align: center;
+    background-color: #91AFBA;
+    border-radius: 8px;
+    border: none;
+
+}
+
+.button__back-to-top-icon {
+    fill: var(--primary-text-color);
+    width: 100%;
+}
 
 /* =========================== */
 /* ========media 375px======== */
@@ -325,6 +349,13 @@ main {
         font-size: 16px;
         letter-spacing: -0.32px;
     }
+
+    /* =======back to top===== */
+
+    .button__back-to-top {
+        bottom: 32px;
+        right: 32px;
+    }
 }
 
 /* =========================== */
@@ -379,4 +410,6 @@ main {
     .popup__window-content {
         background-image: image-set(url("../img/rent/modal/yaht-modal-desk@2x.png") 2x);
     }
+
+    /* =======back to top===== */
 }

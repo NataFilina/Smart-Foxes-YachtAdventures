@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"/>
     
-    <script type="module" crossorigin src="/Smart-Foxes-YachtAdventures/assets/index-54221330.js"></script>
-    <link rel="stylesheet" href="/Smart-Foxes-YachtAdventures/assets/index-e2b9a5f7.css">
+    <script type="module" crossorigin src="/Smart-Foxes-YachtAdventures/assets/index-fbedc9ec.js"></script>
+    <link rel="stylesheet" href="/Smart-Foxes-YachtAdventures/assets/index-502c76f1.css">
   </head>
   <body>
     <!--Header section-->
@@ -410,7 +410,7 @@
             </div>
             <!-- label + textarea comment -->
             <div class="rent__form-content">
-                <label class="rent__form-name-text" for="comment" required>Comment</label>
+                <label class="rent__form-name-text" for="comment">Comment</label>
                 <textarea class="rent__form-name-textarea" name="comment" id="comment" minlength="5"
                     maxlength="147"></textarea>
             </div>
@@ -440,6 +440,31 @@
             to confirm your reservation and provide any additional information or assistance you may need.</p>
     </div>
 </div>
+<!-- =========== back to top ======== -->
+
+<button class="button__back-to-top" onclick="scrollToTop()" id="back-to-up">
+    <svg class="button__back-to-top-icon" width="8" height="16" viewbox="0 0 32 32">
+        <use href="/Smart-Foxes-YachtAdventures/assets/icons-fcf49285.svg#icon-arrow-up"></use>
+    </svg>
+</button>
+
+<script>
+    window.onscroll = () => {
+        toggleTopButton();
+    }
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleTopButton() {
+        if (document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20) {
+            document.getElementById('back-to-up').classList.remove('is-hidden');
+        } else {
+            document.getElementById('back-to-up').classList.add('is-hidden');
+        }
+    }
+</script>
         <section class="reviews">
     <div class="container">
       <div class="reviews-wrap-title">

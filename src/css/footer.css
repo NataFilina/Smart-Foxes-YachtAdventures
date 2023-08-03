@@ -160,10 +160,29 @@ align-items: center;
 align-content: center;
 border-radius: 6px;
 border: 1px solid rgba(246, 245, 239, 0.50);
+color: var(--primary-text-color)
+}
+.footer-networks-link:hover,
+.footer-networks-link:focus {
+    /* border: 1px solid red;
+    color: red; */
 }
 .footer-networks-icon {
       fill: var(--primary-text-color);
-}/* tablet */
+}
+.footer-networks-link:hover .footer-networks-icon {
+    /* fill: red; */
+}
+.footer-networks-link:focus .footer-networks-icon {
+    /* fill: red; */
+}
+.paint0_linear_92_2209 {
+    opacity: 0.0;
+}
+.paint0_linear_92_2209:hover {
+    opacity: 1.0;
+}
+/* tablet */
 @media only screen and (min-width: 768px) {
     .footer-networks-icon {
         width: 10px;

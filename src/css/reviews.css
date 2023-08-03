@@ -1,6 +1,6 @@
 :root {
 --dark-blue: #11131F;
---background-color: #11131F;
+background-color: #11131F;
 }
 
 .reviews-title-yacht {
@@ -131,7 +131,7 @@
   |============================
 */
 
-.scrollTop {
+/* .scrollTop {
     display: inline-flex;
     justify-content:space-around;
     align-items: center;
@@ -139,20 +139,19 @@
     color: #93ABAE;
     background: #93ABAE 0 0 no-repeat;
   
-    width: 44px;
-    /*ширина кнопки*/
-    height: 44px;
+    width: 44px; */
+    /*ширина кнопки
+    height: 44px;*/
     
-    bottom: 5px;
-    /*при фіксованому положенні відступ знизу*/
-    left: 89%;
+    /* bottom: 5px; */
+    /*при фіксованому положенні відступ знизу
+    left: 89%;*/
     /*зсув вліво*/
-}
+/* }
 
 .scrollTop:hover {
     background-position: 0 -108px;
-}
-
+} */
 /*зміщення фону*/
 
 /* Mobile */
@@ -169,7 +168,7 @@ display: none;
 } */
 
 
-@media only screen and (min-width: 32px) {
+@media only screen and (min-width: 375px) {
 
     .hidden-for-tab-and-mob,
     .hidden-only-mob {
@@ -193,14 +192,8 @@ display: none;
     margin-left: 32px;
  }
 
-.flex-button {
-    display: flex;
-    flex: column;
-    align-self: flex-end;
-    justify-content: flex-end;
-    max-width: 400px;
-} 
-}
+ }
+
 /* Tablet */
 @media only screen and (min-width: 768px) {
 
@@ -246,11 +239,11 @@ display: none;
     }
 
     .reviews-title-other {
-        /* background-color: #F6F5EF;
+        background-color: #F6F5EF;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: DM Sans; */
+    font-family: DM Sans;
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
@@ -258,8 +251,9 @@ display: none;
     letter-spacing: -1.44px;
     }
 
-.flex-paragraph,
-.flex-button {
+
+.flex-paragraph
+ {
     display: flex;
     flex: column;
     align-self: flex-end;
@@ -290,20 +284,7 @@ display: none;
         /* flex: column; */
         /* flex-wrap: wrap; */
      }
-    
- .scrollTop {
-    display: inline-flex;
-    justify-content: left;
-    align-items: center;
-    flex-shrink: 0;
-    color: #93ABAE;
-    background: #93ABAE 0 0 no-repeat;
-
-    width: 64px;
-    /*ширина кнопки*/
-    height: 64px;
-  }
-
+     
 }
 
 /* Desk screen */
@@ -319,9 +300,14 @@ display: none;
         padding-bottom: 64px;
         /* this padding is between reviews_clients and arrow up (стрілочка - якірне посилання на перехід до верху сторінки) */
     }
+
+    
+
     .reviews-customers {
-        margin-bottom: 40px;        
+        /* margin-bottom: 40px;         */
+        
     }
+    
     .reviews-wrap-title {
         display: flex;
         flex-wrap: nowrap;
@@ -339,13 +325,7 @@ display: none;
         display: flex;
         flex-wrap: nowrap;
     }
-    .flex-button {
-            display: flex;
-            flex: column;
-            align-self: flex-end;
-            justify-content: flex-end;
-            max-width: 1170px;
-    }
+   
 }
 
 

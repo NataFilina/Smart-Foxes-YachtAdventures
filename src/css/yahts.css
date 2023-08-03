@@ -192,8 +192,15 @@
   font-weight: 700;
   line-height: 15.4px;
   letter-spacing: -0.63px;
+ padding: 14px 11px;
 
   color: var(--primary-text-color);
+}
+.yacht-button-link-rent:hover {
+  color: #93ABAE;
+}
+.yacht-button-link-rent:focus {
+  color: #93ABAE;
 }
 @media only screen and (min-width: 768px) {
   .yacht-button-link-rent {
@@ -222,17 +229,15 @@
 
 .div-yahts {
     padding-top: 164px;
-    margin-bottom: 24px;
 
     display: flex;
     align-items: center;
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 1279.98px) {
   .div-yahts {
-    margin-bottom: 32px;
-    
+    padding-bottom: 32px;
   }
 }
 
@@ -245,6 +250,7 @@ border: 1px solid var(--primary-text-color);
 border-radius: 60px;
 background-color: transparent;
 }
+
 @media only screen and (max-width: 1279.98px) {
   .buttom-tab-style-left,
   .buttom-tab-style-right {
@@ -254,7 +260,12 @@ background-color: transparent;
 .yahts-icon-left,
 .yahts-icon-right {
   fill: var(--primary-text-color);
+  width: 39px;
+  height: 20px;
+ padding-top: 2px;
+ 
 }
+
 .swiper {
   display: flex;
   justify-content: center;
@@ -320,25 +331,30 @@ border-radius: 24px;
 
 .yahts-img {
   width: 299px;
-  margin: 18px 18px 24px 18px;
+  margin: 18px 18px 0 18px;
 }
 
 @media only screen and (min-width: 768px) {
   .yahts-img {
-    margin: 16px 26px 32px 16px;
+    margin: 16px 26px 0 16px;
     width: 312px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .yahts-img {
-    margin: 16px 16px 32px 16px;
+    margin: 16px 16px 0 16px;
     width: 322px;
   }
 }
 
 .yahts-item-description {
-  padding: 0 32px 32px 32px;
+  padding: 24px 24px 24px 24px; 
 }
+@media only screen and (min-width: 768px) {
+  .yahts-item-description {
+    padding: 32px 32px 32px 32px;
+}
+  }
 
 .yahts-item-description-title {
   display: flex;

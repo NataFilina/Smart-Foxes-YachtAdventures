@@ -62,7 +62,7 @@
 /* dekstop */
 @media only screen and (min-width: 1280px) {
     .footer-thumb {
-        /* margin-right: 314px; */
+        margin-right: 0;
     }
 }
 /* tablet */
@@ -104,7 +104,7 @@ height: 13px;
         flex-direction: row;
         gap: 24px;
         align-items: normal;
-        /* margin-right: 315px; */
+        margin-right: 0;
     }
 }
 .footer-nav-item:not(:last-child) {
@@ -124,9 +124,7 @@ line-height: 1.18;
 letter-spacing: 0.42px;
 text-transform: uppercase;
 }
-.footer-networks-thumb {
-    margin-bottom: auto;
-    }
+
 .footer-networks-text {
 font-size: 14px;
 font-weight: 700;
@@ -136,6 +134,7 @@ letter-spacing: 0.42px;
 
 margin-bottom: 16px;
 }
+/* mobile */
 .footer-networks-list {
     display: flex;
     gap: 14px;
@@ -145,6 +144,7 @@ margin-bottom: 16px;
 @media only screen and (min-width: 768px) {
     .footer-networks-list {
         gap: 16px;
+        margin-bottom: 0;
     }
 }
 .footer-networks-item {

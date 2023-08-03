@@ -62,7 +62,7 @@
     .about-content-ul {
         gap: 32px;
         align-self: flex-end;
-        margin-bottom: 64px;
+        padding-bottom: 64px;
     }
 }
 

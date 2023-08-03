@@ -222,7 +222,7 @@ main {
 
 .button__back-to-top {
     position: fixed;
-    bottom: 20px;
+    bottom: 376px;
     right: 20px;
 
 
@@ -234,6 +234,12 @@ main {
     border-radius: 8px;
     border: none;
 
+    transition: background-color 0.5s ease-in-out;
+
+}
+
+.button__back-to-top:hover {
+    background-color: #88B3B9;
 }
 
 .button__back-to-top-icon {
@@ -353,7 +359,7 @@ main {
     /* =======back to top===== */
 
     .button__back-to-top {
-        bottom: 32px;
+        bottom: 328px;
         right: 32px;
     }
 }
@@ -412,4 +418,7 @@ main {
     }
 
     /* =======back to top===== */
+    .button__back-to-top {
+        bottom: 332px;
+    }
 }

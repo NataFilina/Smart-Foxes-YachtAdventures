@@ -1,15 +1,15 @@
 .about {
-    margin-top: 80px;
+    padding-top: 80px;
 }
 @media screen and (min-width: 768px) {
     .about {
-        margin-top: 100px;
+        padding-top: 100px;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .about {
-        margin-top: 164px;
+        padding-top: 164px;
     }
 }
 .about-content{
@@ -56,13 +56,17 @@
 .about-content-ul {
     display: flex;
     gap: 14px;
-    margin-bottom: 40px;
+}
+@media screen and (max-width: 768px){
+    .about-content-ul {
+            padding-bottom: 40px;
+        }
 }
 @media screen and (min-width: 768px) {
     .about-content-ul {
         gap: 32px;
         align-self: flex-end;
-        margin-bottom: 64px;
+        padding-bottom: 64px;
     }
 }
 
@@ -128,7 +132,7 @@
     .about-imgs .about-imgs-item:nth-child(2) {
         order: -1;
         flex: 0 1 35%;
-        margin-top: 254px;
+        margin-top: 317px;
     }
 }
 .about-imgs-item:last-child {

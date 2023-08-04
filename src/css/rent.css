@@ -9,7 +9,7 @@ main {
     overflow-x: hidden;
 }
 
-img {
+.rent__img img {
     width: 100%;
 }
 

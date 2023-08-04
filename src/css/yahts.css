@@ -179,6 +179,7 @@
 } 
 
 .yacht-button {
+  position: relative;
   background-color: inherit;
 
   border-radius: 60px;

@@ -9,6 +9,10 @@ main {
     overflow-x: hidden;
 }
 
+img {
+    width: 100%;
+}
+
 /* ==================== */
 /* ========rent======== */
 /* ==================== */
@@ -33,7 +37,7 @@ main {
 }
 
 .rent__img {
-    background-image: image-set(url("../img/rent/yaht-form-mob@1x.png") 1x, url("../img/rent/yaht-form-mob@2x.png") 2x);
+    /* background-image: image-set(url("../img/rent/yaht-form-mob@1x.png") 1x, url("../img/rent/yaht-form-mob@2x.png") 2x); */
     height: 187px;
     width: 258px;
     background-size: contain;
@@ -228,8 +232,10 @@ main {
 
 .button__back-to-top {
     position: fixed;
-    bottom: 376px;
+    bottom: 20px;
     right: 20px;
+
+    z-index: 2;
 
 
     width: 44px;
@@ -294,7 +300,7 @@ main {
     }
 
     .rent__img {
-        background-image: image-set(url("../img/rent/yaht-form-tab@1x.png") 1x, url("../img/rent/yaht-form-tab@2x.png") 2x);
+        /* background-image: image-set(url("../img/rent/yaht-form-tab@1x.png") 1x, url("../img/rent/yaht-form-tab@2x.png") 2x); */
         height: 187px;
         width: 271px;
         background-size: contain;
@@ -361,13 +367,6 @@ main {
         font-size: 16px;
         letter-spacing: -0.32px;
     }
-
-    /* =======back to top===== */
-
-    .button__back-to-top {
-        bottom: 328px;
-        right: 32px;
-    }
 }
 
 /* =========================== */
@@ -386,7 +385,7 @@ main {
     }
 
     .rent__img {
-        background-image: image-set(url("../img/rent/yaht-form-desk@1x.png") 1x, url("../img/rent/yaht-form-desk@2x.png") 2x);
+        /* background-image: image-set(url("../img/rent/yaht-form-desk@1x.png") 1x, url("../img/rent/yaht-form-desk@2x.png") 2x); */
         background-size: contain;
         height: 191px;
         width: 282px;
@@ -424,7 +423,4 @@ main {
     }
 
     /* =======back to top===== */
-    .button__back-to-top {
-        bottom: 332px;
-    }
 }
